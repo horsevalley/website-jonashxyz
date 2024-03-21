@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>DevOps on Jonas Hestdahl</title>
+    <link>https://jonash.xyz/tags/devops/</link>
+    <description>Recent content in DevOps on Jonas Hestdahl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sat, 09 Mar 2024 14:03:56 +0100</lastBuildDate><atom:link href="https://jonash.xyz/tags/devops/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Modern Linux Tools</title>
+      <link>https://jonash.xyz/posts/modern-linux-tools/</link>
+      <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
+      
+      <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
+      <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
+      <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
+<ul>
+<li><a href="https://github.com/sharkdp/fd"><code>fd</code></a> is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
+<li><a href="https://github.com/ogham/exa"><code>exa</code></a> is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
+<li><a href="https://github.com/ogham/dog"><code>dog</code></a> is a modern, feature-rich DNS client for the command-line.</li>
+<li><a href="https://github.com/rofl0r/ncdu"><code>ncdu</code></a> is a console disk usage analyzer for quick space management.</li>
+<li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
+<li><a href="https://github.com/chmln/sd"><code>sd</code></a> is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
+<li><a href="https://github.com/bootandy/dust"><code>dust</code></a> visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
+<li><a href="https://github.com/ducaale/xh"><code>xh</code></a> is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
+<li><a href="https://github.com/muesli/duf"><code>duf</code></a>is a modern disk usage utility for the command-line with an intuitive interface.</li>
+</ul>
+]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>What Is Devops</title>
+      <link>https://jonash.xyz/posts/what-is-devops/</link>
+      <pubDate>Sat, 09 Mar 2024 13:09:52 +0100</pubDate>
+      
+      <guid>https://jonash.xyz/posts/what-is-devops/</guid>
+      <description>Understanding DevOps: A Brief Overview DevOps, a compound of development (Dev) and operations (Ops), is a software development and delivery approach that emphasizes communication, collaboration, integration, and automation among software developers and IT operations teams. The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</description>
+      <content:encoded><![CDATA[<h1 id="understanding-devops-a-brief-overview">Understanding DevOps: A Brief Overview</h1>
+<p>DevOps, a compound of development (Dev) and operations (Ops), is a software development and delivery approach that emphasizes communication, collaboration, integration, and automation among software developers and IT operations teams. The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</p>
+<h2 id="key-principles-of-devops">Key Principles of DevOps</h2>
+<ul>
+<li>
+<p><strong>Continuous Integration (CI):</strong> Developers merge their changes back to the main branch as often as possible. Automated tests run with these integrations to catch bugs quickly.</p>
+</li>
+<li>
+<p><strong>Continuous Delivery (CD):</strong> This practice involves automatically deploying all code changes to a testing or staging environment after the build stage. It ensures that the software can be reliably released at any time.</p>
+</li>
+<li>
+<p><strong>Automated Testing:</strong> Automation in testing reduces manual workload and speeds up the process of software development and deployment.</p>
+</li>
+<li>
+<p><strong>Infrastructure as Code (IaC):</strong> Managing and provisioning infrastructure through code instead of through manual processes, improving operational efficiency and cloud management.</p>
+</li>
+<li>
+<p><strong>Monitoring and Logging:</strong> Keeping track of the performance of applications and infrastructure to quickly respond to issues.</p>
+</li>
+<li>
+<p><strong>Collaboration and Communication:</strong> Encouraging open communication and collaboration within and between teams to enhance the development process.</p>
+</li>
+</ul>
+<h2 id="benefits-of-devops">Benefits of DevOps</h2>
+<ul>
+<li>
+<p><strong>Faster Time to Market:</strong> Shortened development cycles lead to faster innovation and a quicker time to market.</p>
+</li>
+<li>
+<p><strong>Improved Collaboration:</strong> Breaking down silos between teams enhances collaboration and efficiency.</p>
+</li>
+<li>
+<p><strong>Increased Efficiency:</strong> Automation and streamlined workflows increase the efficiency of the development and deployment processes.</p>
+</li>
+<li>
+<p><strong>Enhanced Quality:</strong> Continuous integration and delivery ensure that quality is maintained through frequent code updates and testing.</p>
+</li>
+<li>
+<p><strong>Higher Customer Satisfaction:</strong> Rapid deliveries of updates and new features lead to higher customer satisfaction.</p>
+</li>
+</ul>
+<h2 id="conclusion">Conclusion</h2>
+<p>DevOps is not just a set of practices but a culture that needs to be adopted for its full potential to be realized. By embracing DevOps, organizations can enhance their ability to deliver applications and services at high velocity, thereby outpacing their competitors in today&rsquo;s fast-paced digital world.</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

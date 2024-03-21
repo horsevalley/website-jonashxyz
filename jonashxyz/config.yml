@@ -1,4 +1,5 @@
 baseURL: "https://jonash.xyz/"
+languageCode: 'en-us'
 title: Jonas Hestdahl
 paginate: 20
 theme: PaperModX

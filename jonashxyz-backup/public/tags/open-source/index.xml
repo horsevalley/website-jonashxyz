@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Open Source on Jonas Hestdahl</title>
+    <link>https://jonash.xyz/tags/open-source/</link>
+    <description>Recent content in Open Source on Jonas Hestdahl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 10 Mar 2024 23:38:13 +0100</lastBuildDate><atom:link href="https://jonash.xyz/tags/open-source/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Unshackle Your Digital Life</title>
+      <link>https://jonash.xyz/posts/how-to-live-an-unshackled-digital-life/</link>
+      <pubDate>Sun, 10 Mar 2024 23:38:13 +0100</pubDate>
+      
+      <guid>https://jonash.xyz/posts/how-to-live-an-unshackled-digital-life/</guid>
+      <description>Unshackle Your Digital Life Get a Google Pixel phone, so you can install GrapheneOS. I recommend Google Pixel 6a. Very cheap and very good. Get rid of all the apps you don&amp;rsquo;t need Sync your data with SyncThing Create your own NextCloud server Use VimWiki/Obsidian + vim/neovim to take notes in markdown, and take full ownership over your own data Use Linux on your personal computer(s) Use pass to store your accounts/passwords Don&amp;rsquo;t let proprietary software take your money and own YOUR data Never look back </description>
+      <content:encoded><![CDATA[<h2 id="unshackle-your-digital-life">Unshackle Your Digital Life</h2>
+<ol>
+<li>Get a Google Pixel phone, so you can install <a href="https://grapheneos.org/">GrapheneOS</a>. I recommend Google Pixel 6a. Very cheap and very good.
+<ul>
+<li>Get rid of all the apps you don&rsquo;t need</li>
+</ul>
+</li>
+<li>Sync your data with <a href="https://syncthing.net/">SyncThing</a></li>
+<li>Create your own <a href="https://landchad.net/nextcloud/">NextCloud</a> server</li>
+<li>Use <a href="https://github.com/vimwiki/vimwiki">VimWiki</a>/<a href="https://obsidian.md/">Obsidian</a> + vim/<a href="https://github.com/neovim/neovim">neovim</a> to take notes in <a href="https://www.markdownguide.org/getting-started/">markdown</a>, and take full ownership over your own data</li>
+<li>Use <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> on your personal computer(s)</li>
+<li>Use <a href="https://www.passwordstore.org/">pass</a> to store your accounts/passwords</li>
+<li>Don&rsquo;t let <a href="https://en.wikipedia.org/wiki/Proprietary_software">proprietary software</a> take your money and own YOUR data</li>
+<li>Never look back</li>
+</ol>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

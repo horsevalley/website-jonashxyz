@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Automation on Jonas Hestdahl</title>
+    <link>https://jonash.xyz/tags/automation/</link>
+    <description>Recent content in Automation on Jonas Hestdahl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 20 Mar 2024 17:55:52 +0100</lastBuildDate><atom:link href="https://jonash.xyz/tags/automation/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Obsidian Sync Github Script</title>
+      <link>https://jonash.xyz/posts/obsidian-sync-github-script/</link>
+      <pubDate>Wed, 20 Mar 2024 17:55:52 +0100</pubDate>
+      
+      <guid>https://jonash.xyz/posts/obsidian-sync-github-script/</guid>
+      <description>obsidian-sync-github Why write this script? I&amp;rsquo;m using Arch Linux and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.
+How the script works Auto-pushes Obsidian notes to GitHub via a cronjob every 30 minutes crontab -e -&amp;gt; */30 * * * * /home/jonash/.local/bin/obsidian-sync-github Sends a notification via dunstify and your e-mail address of choice #!</description>
+      <content:encoded><![CDATA[<h1 id="obsidian-sync-github">obsidian-sync-github</h1>
+<h2 id="why-write-this-script">Why write this script?</h2>
+<p>I&rsquo;m using Arch Linux and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.</p>
+<h2 id="how-the-script-works">How the script works</h2>
+<ul>
+<li>Auto-pushes Obsidian notes to GitHub via a cronjob every 30 minutes
+<ul>
+<li>crontab -e -&gt; <code>*/30 * * * * /home/jonash/.local/bin/obsidian-sync-github</code></li>
+</ul>
+</li>
+<li>Sends a notification via dunstify and your e-mail address of choice</li>
+</ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="cp">#!/bin/bash
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Navigate to your repository directory</span>
+</span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/obsidian/
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Add all changes to git</span>
+</span></span><span class="line"><span class="cl">git add .
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Commit the changes with a current timestamp</span>
+</span></span><span class="line"><span class="cl">git commit -m <span class="s2">&#34;Automated commit on </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Push the changes</span>
+</span></span><span class="line"><span class="cl">git push origin main
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Send notification after the push is sent</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> git push origin main<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">  <span class="c1"># Check if dunstify is available (dunst&#39;s notification tool)</span>
+</span></span><span class="line"><span class="cl">  <span class="k">if</span> <span class="nb">command</span> -v dunstify &gt;/dev/null 2&gt;<span class="p">&amp;</span>1<span class="p">;</span> <span class="k">then</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Send a notification</span>
+</span></span><span class="line"><span class="cl">    dunstify <span class="s2">&#34;Successfully pushed obsidian notes to GitHub!&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">else</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">echo</span> <span class="s2">&#34;dunstify not found, cannot send notification&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">fi</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1"># Email details</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">recipient</span><span class="o">=</span><span class="s2">&#34;jonash@jonash.xyz&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">subject</span><span class="o">=</span><span class="s2">&#34;Subject: Obsidian Notes Push Successful&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="nv">body</span><span class="o">=</span><span class="s2">&#34;Your Obsidian notes have been successfully pushed to GitHub on </span><span class="k">$(</span>date<span class="k">)</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">  
+</span></span><span class="line"><span class="cl">  <span class="c1"># Send the email</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> -e <span class="s2">&#34;</span><span class="nv">$subject</span><span class="s2">\n\n</span><span class="nv">$body</span><span class="s2">&#34;</span> <span class="p">|</span> msmtp <span class="s2">&#34;</span><span class="nv">$recipient</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">else</span>
+</span></span><span class="line"><span class="cl">  <span class="nb">echo</span> <span class="s2">&#34;git push failed&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="k">fi</span>
+</span></span></code></pre></div><p></p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

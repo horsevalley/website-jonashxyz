@@ -1,0 +1,13 @@
+/* The default color is a purple vibe, */
+/* you can customize the colors of link, link underline and their hover variants */
+/* by override the following css variables in `assets/css/extended/custom.css` of your site. */
+
+```css
+:root {
+  --link-color: var(--primary);
+  --link-hover-color: #46cb18;
+  --link-underline-shadow: 0 1px 0 var(--link-color);
+  --link-hover-underline-color: #46cb18;
+  --link-hover-underline-shadow: 0 2px 0 var(--link-hover-underline-color);
+}
+```

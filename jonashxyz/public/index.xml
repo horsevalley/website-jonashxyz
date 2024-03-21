@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Jonas Hestdahl</title>
-    <link>http://localhost:1313/</link>
+    <link>https://jonash.xyz/</link>
     <description>Recent content on Jonas Hestdahl</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 10 Mar 2024 16:13:41 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Sun, 10 Mar 2024 16:13:41 +0100</lastBuildDate><atom:link href="https://jonash.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Obsidian Sync Github Script</title>
-      <link>http://localhost:1313/posts/obsidian-sync-github-script/</link>
+      <link>https://jonash.xyz/posts/obsidian-sync-github-script/</link>
       <pubDate>Wed, 20 Mar 2024 17:55:52 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/obsidian-sync-github-script/</guid>
+      <guid>https://jonash.xyz/posts/obsidian-sync-github-script/</guid>
       <description>obsidian-sync-github Why write this script? I&amp;rsquo;m using Arch Linux and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.
 How the script works Auto-pushes Obsidian notes to GitHub via a cronjob every 30 minutes crontab -e -&amp;gt; */30 * * * * /home/jonash/.local/bin/obsidian-sync-github Sends a notification via dunstify and your e-mail address of choice #!</description>
       <content:encoded><![CDATA[<h1 id="obsidian-sync-github">obsidian-sync-github</h1>
@@ -67,10 +67,10 @@ How the script works Auto-pushes Obsidian notes to GitHub via a cronjob every 30
     
     <item>
       <title>Create Your Own Website With HUGO</title>
-      <link>http://localhost:1313/posts/generate-a-website-with-hugo/</link>
+      <link>https://jonash.xyz/posts/generate-a-website-with-hugo/</link>
       <pubDate>Thu, 14 Mar 2024 14:42:54 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/generate-a-website-with-hugo/</guid>
+      <guid>https://jonash.xyz/posts/generate-a-website-with-hugo/</guid>
       <description>What is HUGO? HUGO is a framework, designed to convert code and content into static websites. It is written in Go, making it exceptionally fast at compiling websites, even those with thousands of pages. Here&amp;rsquo;s how it works:
 Fast and Efficient: HUGO takes your content, which you can write in Markdown (a lightweight markup language), and your templates, which define the structure and design of your site, and combines them to generate a complete, static website.</description>
       <content:encoded><![CDATA[<h2 id="what-is-hugo">What is HUGO?</h2>
@@ -158,10 +158,10 @@ draft : false
     
     <item>
       <title>Unshackle Your Digital Life</title>
-      <link>http://localhost:1313/posts/how-to-live-an-unshackled-digital-life/</link>
+      <link>https://jonash.xyz/posts/how-to-live-an-unshackled-digital-life/</link>
       <pubDate>Sun, 10 Mar 2024 23:38:13 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/how-to-live-an-unshackled-digital-life/</guid>
+      <guid>https://jonash.xyz/posts/how-to-live-an-unshackled-digital-life/</guid>
       <description>Unshackle Your Digital Life Get a Google Pixel phone, so you can install GrapheneOS. I recommend Google Pixel 6a. Very cheap and very good. Get rid of all the apps you don&amp;rsquo;t need Sync your data with SyncThing Create your own NextCloud server Use VimWiki/Obsidian + vim/neovim to take notes in markdown, and take full ownership over your own data Use Linux on your personal computer(s) Use pass to store your accounts/passwords Don&amp;rsquo;t let proprietary software take your money and own YOUR data Never look back </description>
       <content:encoded><![CDATA[<h2 id="unshackle-your-digital-life">Unshackle Your Digital Life</h2>
 <ol>
@@ -183,10 +183,10 @@ draft : false
     
     <item>
       <title>GRUB Bootloader</title>
-      <link>http://localhost:1313/posts/grub-bootloader/</link>
+      <link>https://jonash.xyz/posts/grub-bootloader/</link>
       <pubDate>Sun, 10 Mar 2024 19:17:15 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/grub-bootloader/</guid>
+      <guid>https://jonash.xyz/posts/grub-bootloader/</guid>
       <description>First of all, what is GRUB? GRUB is a boot loader, which lets you boot up your system. The abbreviation stands for GNU GRand Unified Bootloader, and is a boot loader package from the GNU Project. GRUB is the primary bootloader for many Linux distributions, allowing users to choose from multiple operating systems or different versions of the same operating system at boot time. It&amp;rsquo;s designed to be highly configurable and supports a wide range of operating systems, not just Linux.</description>
       <content:encoded><![CDATA[<h2 id="first-of-all-what-is-grub">First of all, what is GRUB?</h2>
 <p>GRUB is a boot loader, which lets you boot up your system. The abbreviation stands for GNU GRand Unified Bootloader, and is a boot loader package from the GNU Project. GRUB is the primary bootloader for many Linux distributions, allowing users to choose from multiple operating systems or different versions of the same operating system at boot time. It&rsquo;s designed to be highly configurable and supports a wide range of operating systems, not just Linux.</p>
@@ -225,10 +225,10 @@ draft : false
     
     <item>
       <title>Modern Linux Tools</title>
-      <link>http://localhost:1313/posts/modern-linux-tools/</link>
+      <link>https://jonash.xyz/posts/modern-linux-tools/</link>
       <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/modern-linux-tools/</guid>
+      <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
       <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
       <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
 <ul>
@@ -247,10 +247,10 @@ draft : false
     
     <item>
       <title>Cloud Engineering</title>
-      <link>http://localhost:1313/posts/cloud-engineering/</link>
+      <link>https://jonash.xyz/posts/cloud-engineering/</link>
       <pubDate>Sat, 09 Mar 2024 13:27:32 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/cloud-engineering/</guid>
+      <guid>https://jonash.xyz/posts/cloud-engineering/</guid>
       <description>Demystifying Cloud Engineering Cloud engineering is the application of engineering disciplines to cloud computing. It brings a systematic approach to the high-level concerns of commercialization, standardization, and governance in conceiving, developing, operating, and maintaining cloud computing systems. It is a multidisciplinary method that encompasses contributions from diverse areas such as systems engineering, software engineering, web engineering, and database engineering.
 Key Components of Cloud Engineering Cloud Infrastructure: Design and management of the physical and virtual resources necessary for cloud computing.</description>
       <content:encoded><![CDATA[<h1 id="demystifying-cloud-engineering">Demystifying Cloud Engineering</h1>
@@ -307,10 +307,10 @@ Key Components of Cloud Engineering Cloud Infrastructure: Design and management 
     
     <item>
       <title>From darkness to light</title>
-      <link>http://localhost:1313/posts/from-darkness-to-light/</link>
+      <link>https://jonash.xyz/posts/from-darkness-to-light/</link>
       <pubDate>Sat, 09 Mar 2024 13:16:18 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/from-darkness-to-light/</guid>
+      <guid>https://jonash.xyz/posts/from-darkness-to-light/</guid>
       <description>From darkness to light In winter&amp;rsquo;s clutch, the world lay still,
 A canvas painted in shades of chill.
 The trees stood bare, the skies so gray,
@@ -351,10 +351,10 @@ Healing the winter&rsquo;s wounds in our heart.</p>
     
     <item>
       <title>What Is Devops</title>
-      <link>http://localhost:1313/posts/what-is-devops/</link>
+      <link>https://jonash.xyz/posts/what-is-devops/</link>
       <pubDate>Sat, 09 Mar 2024 13:09:52 +0100</pubDate>
       
-      <guid>http://localhost:1313/posts/what-is-devops/</guid>
+      <guid>https://jonash.xyz/posts/what-is-devops/</guid>
       <description>Understanding DevOps: A Brief Overview DevOps, a compound of development (Dev) and operations (Ops), is a software development and delivery approach that emphasizes communication, collaboration, integration, and automation among software developers and IT operations teams. The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</description>
       <content:encoded><![CDATA[<h1 id="understanding-devops-a-brief-overview">Understanding DevOps: A Brief Overview</h1>
 <p>DevOps, a compound of development (Dev) and operations (Ops), is a software development and delivery approach that emphasizes communication, collaboration, integration, and automation among software developers and IT operations teams. The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</p>
