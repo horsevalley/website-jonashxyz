@@ -1,1 +1,1 @@
-My personal website/tech blog
+My personal website/tech blog.
