@@ -16,7 +16,7 @@ Today I learned that if you have Inkscape installed on your machine, you can con
 
 - Replace `input.svg` with the name of your SVG file and `output.pdf` with the desired output PDF file name.
 ## Example use case
-Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the one-liner to convert it to PDF. Very cool!
+Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the command to convert it to PDF. Very cool!
 
 
 

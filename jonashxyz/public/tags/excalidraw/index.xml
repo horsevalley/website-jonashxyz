@@ -15,7 +15,7 @@
       <guid>https://jonash.xyz/posts/convert-svg-to-pdf-using-inkscape/</guid>
       <description>Convert SVG to PDF Today I learned that if you have Inkscape installed on your machine, you can convert .SVG files into .PDF, using this simple command:
 inkscape input.svg --export-filename=output.pdf
-Replace input.svg with the name of your SVG file and output.pdf with the desired output PDF file name. Example use case Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the one-liner to convert it to PDF.</description>
+Replace input.svg with the name of your SVG file and output.pdf with the desired output PDF file name. Example use case Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the command to convert it to PDF.</description>
       <content:encoded><![CDATA[<h2 id="convert-svg-to-pdf">Convert SVG to PDF</h2>
 <p>Today I learned that if you have Inkscape installed on your machine, you can convert .SVG files into .PDF, using this simple command:</p>
 <p><code>inkscape input.svg --export-filename=output.pdf</code></p>
@@ -23,7 +23,7 @@ Replace input.svg with the name of your SVG file and output.pdf with the desired
 <li>Replace <code>input.svg</code> with the name of your SVG file and <code>output.pdf</code> with the desired output PDF file name.</li>
 </ul>
 <h2 id="example-use-case">Example use case</h2>
-<p>Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the one-liner to convert it to PDF. Very cool!</p>
+<p>Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the command to convert it to PDF. Very cool!</p>
 <h2 id="links-">Links :</h2>
 <p>202403245112</p>
 ]]></content:encoded>
