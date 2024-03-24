@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Obsidian on Jonas Hestdahl</title>
+    <link>https://jonash.xyz/tags/obsidian/</link>
+    <description>Recent content in Obsidian on Jonas Hestdahl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Mar 2024 13:06:35 +0100</lastBuildDate><atom:link href="https://jonash.xyz/tags/obsidian/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Convert Svg to Pdf Using Inkscape</title>
+      <link>https://jonash.xyz/posts/convert-svg-to-pdf-using-inkscape/</link>
+      <pubDate>Sun, 24 Mar 2024 13:06:35 +0100</pubDate>
+      
+      <guid>https://jonash.xyz/posts/convert-svg-to-pdf-using-inkscape/</guid>
+      <description>Convert SVG to PDF Today I learned that if you have Inkscape installed, you can convert .SVG files into .PDF, using this simple one-liner: inkscape input.svg --export-filename=output.pdf
+Replace input.svg with the name of your SVG file and output.pdf with the desired output PDF file name. Example use case Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the one-liner to convert it to PDF.</description>
+      <content:encoded><![CDATA[<h2 id="convert-svg-to-pdf">Convert SVG to PDF</h2>
+<p>Today I learned that if you have Inkscape installed, you can convert .SVG files into .PDF, using this simple one-liner:
+<code>inkscape input.svg --export-filename=output.pdf</code></p>
+<ul>
+<li>Replace <code>input.svg</code> with the name of your SVG file and <code>output.pdf</code> with the desired output PDF file name.</li>
+</ul>
+<h2 id="example-use-case">Example use case</h2>
+<p>Say you have developed a drawing or mindmap in Excalidraw. You can export this to SVG and then run the one-liner to convert it to PDF. Very cool!</p>
+<h2 id="links-">Links :</h2>
+<p>202403245112</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>
