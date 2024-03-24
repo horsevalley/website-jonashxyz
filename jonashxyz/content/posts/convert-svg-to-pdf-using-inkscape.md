@@ -1,5 +1,5 @@
 ---
-title : 'Convert Svg to Pdf Using Inkscape'
+title : 'Convert SVG to PDF Using Inkscape'
 date : 2024-03-24T13:06:35+01:00
 tags:
     - Article
@@ -10,7 +10,7 @@ tags:
     - CLI
 ---
 ## Convert SVG to PDF
-Today I learned that if you have Inkscape installed, you can convert .SVG files into .PDF, using this simple one-liner:
+Today I learned that if you have Inkscape installed on your machine, you can convert .SVG files into .PDF, using this simple one-liner:
 `inkscape input.svg --export-filename=output.pdf`
 - Replace `input.svg` with the name of your SVG file and `output.pdf` with the desired output PDF file name.
 ## Example use case

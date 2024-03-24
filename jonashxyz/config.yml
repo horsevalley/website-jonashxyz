@@ -16,7 +16,7 @@ buildFuture: false
 buildExpired: false
 pygmentsUseClasses: true
 
-googleAnalytics: UA-123-45
+# googleAnalytics: UA-123-45
 
 minify:
     disableXML: true
@@ -103,9 +103,9 @@ params:
     #     - name: github
     #       url: "https://github.com/"
 
-    analytics:
-        google:
-            SiteVerificationTag: "XYZabc"
+    # analytics:
+    #     google:
+    #         SiteVerificationTag: "XYZabc"
     #     bing:
     #         SiteVerificationTag: "XYZabc"
     #     yandex:
