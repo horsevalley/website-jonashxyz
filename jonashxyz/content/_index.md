@@ -5,7 +5,8 @@ draft : false
 ---
 
 ## Welcome to my website!
-I'm Jonas, and i'm from Norway. I write mostly about technology, programming, Linux, Vim/Neovim, CLI/TUI tools, automation, books and productivity. You'll probably find some other stuff aswell.
+Hi. I'm Jonas from Norway. Avid learner. Aspiring DevOps/backend/cloud native engineer.
 
+Some of the things I love; Linux, Vim/Neovim, tmux, open source, programming, computer science, technology, gadgets, CLI/TUI tools, automation, productivity, books, movies, nature, science, people, history and culture.
 ## Recent posts
 
