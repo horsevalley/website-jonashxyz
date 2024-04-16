@@ -36,7 +36,7 @@ systemctl enable NetworkManager
 ```
 ## Mount EFI-partition
 ```
-mount /dev/drive /boot/EFI
+mount --mkdir /dev/drive /boot/EFI
 ```
 ## Install GRUB
 ```

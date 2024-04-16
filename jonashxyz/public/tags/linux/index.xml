@@ -59,7 +59,7 @@
 <h2 id="enablenetworkmanager">EnableNetworkManager</h2>
 <pre tabindex="0"><code>systemctl enable NetworkManager
 </code></pre><h2 id="mount-efi-partition">Mount EFI-partition</h2>
-<pre tabindex="0"><code>mount /dev/drive /boot/EFI
+<pre tabindex="0"><code>mount --mkdir /dev/drive /boot/EFI
 </code></pre><h2 id="install-grub">Install GRUB</h2>
 <pre tabindex="0"><code>grub-install --target=x86_64-efi --bootloader-id=grub_uefi --efi-directory=/boot/EFI --no-nvram --removable --recheck
 </code></pre><h2 id="make-grub-config-file">Make grub config file</h2>
