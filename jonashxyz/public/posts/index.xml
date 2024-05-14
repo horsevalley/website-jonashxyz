@@ -6,7 +6,48 @@
     <description>Recent content in Posts on Jonas Hestdahl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 24 Mar 2024 13:06:35 +0100</lastBuildDate><atom:link href="https://jonash.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kubernetes - understanding the relationship between nodes and pods</title>
+      <link>https://jonash.xyz/posts/kubernetes---understanding-the-relationship-between-nodes-and-pods/</link>
+      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/posts/kubernetes---understanding-the-relationship-between-nodes-and-pods/</guid>
+      <description>The relationship between nodes and pods In Kubernetes, the relationship between nodes and pods is central to how applications are deployed and managed. Understanding what nodes and pods are, individually, helps clarify their interaction.
+What are Pods? A pod is the smallest deployable unit in Kubernetes and serves as a wrapper for one or more containers. Each pod is designed to run a single instance of a given application or service.</description>
+      <content:encoded><![CDATA[<h1 id="the-relationship-between-nodes-and-pods">The relationship between nodes and pods</h1>
+<p>In Kubernetes, the relationship between nodes and pods is central to how applications are deployed and managed. Understanding what nodes and pods are, individually, helps clarify their interaction.</p>
+<h3 id="what-are-pods">What are Pods?</h3>
+<p>A <strong>pod</strong> is the smallest deployable unit in Kubernetes and serves as a wrapper for one or more containers. Each pod is designed to run a single instance of a given application or service. It can contain one or multiple containers (usually Docker containers), and these containers within a pod share resources like networking and storage. Containers in the same pod can communicate with each other using <code>localhost</code>, as they share the same network namespace.</p>
+<p>Pods encapsulate:</p>
+<ul>
+<li>Application containers</li>
+<li>Storage resources</li>
+<li>A unique network IP</li>
+<li>Options that govern how the container(s) should run</li>
+</ul>
+<p>A pod is designed to run a single instance of a given application. If your application requires scaling, you create multiple instances of the same pod, each of which might be identical but isolated from others.</p>
+<h3 id="what-are-nodes">What are Nodes?</h3>
+<p>A <strong>node</strong> is a worker machine in a Kubernetes cluster. This machine can be either a physical computer or a virtual machine (VM) depending on the environment in which the Kubernetes cluster is deployed. Each node is managed by the master components (such as the scheduler, API server, and controller manager), which make decisions about where to place pods, monitor node and pod status, and respond to changes in the cluster. Nodes have the necessary services to run pods, including the Docker runtime and the Kubelet, which is responsible for maintaining a set of pods as specified by the Kubernetes API.</p>
+<p>Each node in a Kubernetes cluster fulfills one or more of the following roles:</p>
+<ul>
+<li><strong>Master Node</strong>: Runs cluster management tasks.</li>
+<li><strong>Worker Node</strong>: Hosts the Pods that are the components of the application workload.</li>
+</ul>
+<p>Nodes are responsible for providing the resources (CPU, memory, network, and storage) that pods need to run their applications.</p>
+<h3 id="relationship-between-nodes-and-pods">Relationship between Nodes and Pods</h3>
+<ul>
+<li>Nodes provide the runtime environments for pods. Each node can host multiple pods.</li>
+<li>Pods are assigned to nodes by the Kubernetes scheduler based on resource availability, policy, and other constraints.</li>
+<li>Each pod is bound to a node and remains on that node until terminated or deleted. If a node fails, the pods scheduled on that node are scheduled for deletion, and they may be recreated by the control plane on other nodes.</li>
+</ul>
+<p>This relationship enables Kubernetes to manage large-scale, distributed environments efficiently, ensuring that applications are reliably available and can be scaled as needed across the various nodes in the cluster.</p>
+<h2 id="links">Links:</h2>
+<p>202405142258</p>
+<p>Kubernetes documentation home: <a href="https://kubernetes.io/docs/home/">https://kubernetes.io/docs/home/</a></p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Convert SVG to PDF Using Inkscape</title>
       <link>https://jonash.xyz/posts/convert-svg-to-pdf-using-inkscape/</link>

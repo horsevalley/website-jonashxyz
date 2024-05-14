@@ -3,7 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jonash.xyz/tags/article/</loc>
-    <lastmod>2024-03-24T13:06:35+01:00</lastmod>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/devops/</loc>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/kubernetes/</loc>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/kubernetes---understanding-the-relationship-between-nodes-and-pods/</loc>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/</loc>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/</loc>
+    <lastmod>2024-05-14T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/cli/</loc>
     <lastmod>2024-03-24T13:06:35+01:00</lastmod>
@@ -18,12 +33,6 @@
     <lastmod>2024-03-24T13:06:35+01:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/obsidian/</loc>
-    <lastmod>2024-03-24T13:06:35+01:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/posts/</loc>
-    <lastmod>2024-03-24T13:06:35+01:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/tags/</loc>
     <lastmod>2024-03-24T13:06:35+01:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/til/</loc>
@@ -88,9 +97,6 @@
   </url><url>
     <loc>https://jonash.xyz/</loc>
     <lastmod>2024-03-10T16:13:41+01:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/tags/devops/</loc>
-    <lastmod>2024-03-09T14:03:56+01:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/posts/modern-linux-tools/</loc>
     <lastmod>2024-03-09T14:03:56+01:00</lastmod>

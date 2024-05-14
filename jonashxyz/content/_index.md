@@ -5,8 +5,8 @@ draft : false
 ---
 
 ## Welcome to my website!
-Hi. I'm Jonas from Norway. Avid learner. Aspiring DevOps/backend/cloud native engineer.
+Hi. I'm Jonas from Norway. I'm an aspiring DevOps/backend/cloud native engineer and avid learner.
 
-Stuff I enjoy: Linux, vim/neovim, tmux, open source, programming, tinkering, computer science, technology, gadgets, CLI/TUI tools, automation, productivity, books, movies, nature, science, people, history and culture. 
+Here's some of the stuff I enjoy: Linux, vim/neovim, tmux, open source, programming, tinkering, computer science, technology, gadgets, CLI/TUI tools, automation, productivity, books, movies, nature, science, people, history and culture. 
 ## Recent posts
 
