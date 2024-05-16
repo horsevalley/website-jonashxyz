@@ -6,11 +6,11 @@
     <description>Recent content in Tags on Jonas Hestdahl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 16 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article</title>
       <link>https://jonash.xyz/tags/article/</link>
-      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/tags/article/</guid>
       <description></description>
@@ -20,7 +20,7 @@
     <item>
       <title>DevOps</title>
       <link>https://jonash.xyz/tags/devops/</link>
-      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/tags/devops/</guid>
       <description></description>
@@ -28,9 +28,19 @@
     </item>
     
     <item>
+      <title>Helm</title>
+      <link>https://jonash.xyz/tags/helm/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/tags/helm/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Kubernetes</title>
       <link>https://jonash.xyz/tags/kubernetes/</link>
-      <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/tags/kubernetes/</guid>
       <description></description>

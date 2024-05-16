@@ -8,6 +8,205 @@
     <language>en-us</language>
     <lastBuildDate>Sun, 10 Mar 2024 16:13:41 +0100</lastBuildDate><atom:link href="https://jonash.xyz/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Helm - The package manager for Kubernetes</title>
+      <link>https://jonash.xyz/posts/helm---the-package-manager-for-kubernetes/</link>
+      <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/posts/helm---the-package-manager-for-kubernetes/</guid>
+      <description>#Kubernetes #Helm #DevOps
+Helm Helm is the best way to find, share, and use software built for Kubernetes. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
+Helm is a graduated project in the CNCF and is maintained by the Helm community.
+What is a helm chart? a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</description>
+      <content:encoded><![CDATA[<p>#Kubernetes #Helm #DevOps</p>
+<h2 id="helm">Helm</h2>
+<p>Helm is the best way to find, share, and use software built for <a href="https://kubernetes.io">Kubernetes</a>. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
+<p>Helm is a graduated project in the <a href="https://cncf.io">CNCF</a> and is maintained by the <a href="https://github.com/helm/community">Helm community</a>.</p>
+<h2 id="what-is-a-helm-chart">What is a helm chart?</h2>
+<p>a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</p>
+<p>In other words, a Helm chart is a package that contains all the necessary information and resources to deploy an application or service onto a Kubernetes cluster. It includes a collection of files that describe a related set of Kubernetes resources.</p>
+<p>Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.</p>
+<h2 id="how-to-install-helm">How to install helm</h2>
+<p><a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a></p>
+<h3 id="example-structure-of-a-helm-chart">Example Structure of a Helm Chart</h3>
+<pre tabindex="0"><code>mychart/
+  Chart.yaml        # Chart metadata
+  values.yaml       # Default configuration values
+  charts/           # Dependency charts (optional)
+  templates/        # Templates for Kubernetes resources
+    deployment.yaml
+    service.yaml
+    ...
+  README.md         # Documentation (optional)
+</code></pre><h3 id="components-and-functionality-of-a-helm-chart">Components and functionality of a Helm chart:</h3>
+<ol>
+<li>
+<p><strong>Chart.yaml</strong>: This file contains metadata about the chart, including the name, version, description, and any dependencies on other charts.</p>
+</li>
+<li>
+<p><strong>Values.yaml</strong>: This file defines the default configuration values for the chart. Users can override these values when they install or upgrade a chart to customize the deployment.</p>
+</li>
+<li>
+<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a href="https://go.dev/">Go</a> templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
+</li>
+<li>
+<p><strong>Charts</strong>: This directory (optional) can contain dependencies, which are other charts that this chart depends on.</p>
+</li>
+<li>
+<p><strong>Files</strong>: Additional files can be included in the chart for reference, such as <code>README.md</code> or any other documentation.</p>
+</li>
+</ol>
+<h3 id="how-helm-charts-work">How Helm Charts Work</h3>
+<ul>
+<li><strong>Packaging</strong>: Helm charts are packaged into <code>.tgz</code> (tarball) files, which can be distributed and shared.</li>
+<li><strong>Installation</strong>: When you install a chart using the <code>helm install</code> command, Helm takes the templates, substitutes any values, and generates Kubernetes manifests that are then applied to the Kubernetes cluster.</li>
+<li><strong>Customization</strong>: Users can provide their own configuration values via the <code>--values</code> or <code>--set</code> flags to customize the deployment without modifying the chart&rsquo;s source code.</li>
+<li><strong>Versioning</strong>: Charts can be versioned, allowing for consistent deployments and the ability to roll back to previous versions if necessary.</li>
+</ul>
+<h3 id="what-are-the-benefits-of-using-helm-charts">What are the benefits of using Helm Charts?</h3>
+<ul>
+<li><strong>Reusability</strong>: Helm charts encapsulate Kubernetes resources into reusable packages, making it easy to share and reuse configurations across different environments.</li>
+<li><strong>Simplified Management</strong>: Helm abstracts the complexity of Kubernetes configurations, making it easier to manage and deploy applications.</li>
+<li><strong>Dependency Management</strong>: Helm manages dependencies between different charts, ensuring that all required services are deployed in the correct order.</li>
+<li><strong>Version Control</strong>: Helm charts support versioning, which helps in tracking changes and rolling back to previous versions when needed.</li>
+<li><strong>Customization</strong>: The ability to override default values allows users to customize deployments without altering the original chart.</li>
+</ul>
+<h3 id="common-helm-commands">Common Helm commands</h3>
+<ol>
+<li>
+<p><strong><code>helm repo add &lt;repo-name&gt; &lt;repo-url&gt;</code></strong></p>
+<ul>
+<li>Adds a Helm chart repository to your local Helm client.</li>
+<li><strong>Example</strong>: <code>helm repo add stable https://charts.helm.sh/stable</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm repo update</code></strong></p>
+<ul>
+<li>Updates the local cache of the Helm chart repositories.</li>
+<li><strong>Example</strong>: <code>helm repo update</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm search repo &lt;keyword&gt;</code></strong></p>
+<ul>
+<li>Searches for charts in the added repositories that match the given keyword.</li>
+<li><strong>Example</strong>: <code>helm search repo nginx</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm install &lt;release-name&gt; &lt;chart&gt; [flags]</code></strong></p>
+<ul>
+<li>Installs a Helm chart to create a new release.</li>
+<li><strong>Example</strong>: <code>helm install my-nginx stable/nginx-ingress</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm upgrade &lt;release-name&gt; &lt;chart&gt; [flags]</code></strong></p>
+<ul>
+<li>Upgrades an existing release to a new version of the chart.</li>
+<li><strong>Example</strong>: <code>helm upgrade my-nginx stable/nginx-ingress</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm uninstall &lt;release-name&gt; [flags]</code></strong></p>
+<ul>
+<li>Uninstalls a release from the Kubernetes cluster.</li>
+<li><strong>Example</strong>: <code>helm uninstall my-nginx</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm list [flags]</code></strong></p>
+<ul>
+<li>Lists all releases in the current namespace.</li>
+<li><strong>Example</strong>: <code>helm list</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm status &lt;release-name&gt;</code></strong></p>
+<ul>
+<li>Displays the status of the specified release.</li>
+<li><strong>Example</strong>: <code>helm status my-nginx</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm rollback &lt;release-name&gt; &lt;revision&gt;</code></strong></p>
+<ul>
+<li>Rolls back a release to a specific revision.</li>
+<li><strong>Example</strong>: <code>helm rollback my-nginx 1</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm template &lt;chart&gt; [flags]</code></strong></p>
+<ul>
+<li>Generates Kubernetes manifest files from a Helm chart without actually installing the chart.</li>
+<li><strong>Example</strong>: <code>helm template stable/nginx-ingress</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm show values &lt;chart&gt;</code></strong></p>
+<ul>
+<li>Displays the default values for a Helm chart.</li>
+<li><strong>Example</strong>: <code>helm show values stable/nginx-ingress</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm get all &lt;release-name&gt;</code></strong></p>
+<ul>
+<li>Retrieves all information about a specific release, including values, hooks, and manifest files.</li>
+<li><strong>Example</strong>: <code>helm get all my-nginx</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm package &lt;chart-path&gt; [flags]</code></strong></p>
+<ul>
+<li>Packages a Helm chart directory into a <code>.tgz</code> (tarball) file.</li>
+<li><strong>Example</strong>: <code>helm package ./mychart</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm lint &lt;chart&gt;</code></strong></p>
+<ul>
+<li>Runs a series of tests to ensure that a chart follows best practices.</li>
+<li><strong>Example</strong>: <code>helm lint ./mychart</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm test &lt;release-name&gt; [flags]</code></strong></p>
+<ul>
+<li>Runs tests for a release to validate its deployment.</li>
+<li><strong>Example</strong>: <code>helm test my-nginx</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm dependency update [flags]</code></strong></p>
+<ul>
+<li>Updates the dependencies for a chart based on the <code>Chart.yaml</code> file.</li>
+<li><strong>Example</strong>: <code>helm dependency update ./mychart</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm pull &lt;chart&gt; [flags]</code></strong></p>
+<ul>
+<li>Downloads a chart from a repository and (optionally) decompresses it.</li>
+<li><strong>Example</strong>: <code>helm pull stable/nginx-ingress</code></li>
+</ul>
+</li>
+<li>
+<p><strong><code>helm repo list</code></strong></p>
+<ul>
+<li>Lists all the repositories that have been added.</li>
+<li><strong>Example</strong>: <code>helm repo list</code></li>
+</ul>
+</li>
+</ol>
+<p>These commands cover the most common tasks you&rsquo;ll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.</p>
+<h2 id="links-">Links :</h2>
+<p>202405161033</p>
+<p><a href="https://helm.sh/">https://helm.sh/</a></p>
+]]></content:encoded>
+    </item>
+    
+    <item>
       <title>Kubernetes - understanding the relationship between nodes and pods</title>
       <link>https://jonash.xyz/posts/kubernetes---understanding-the-relationship-between-nodes-and-pods/</link>
       <pubDate>Tue, 14 May 2024 00:00:00 +0000</pubDate>
