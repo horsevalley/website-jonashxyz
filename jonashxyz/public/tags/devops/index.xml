@@ -199,10 +199,13 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 </ul>
 </li>
 </ol>
-<p>These commands cover the most common tasks you&rsquo;ll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.</p>
+<p>These commands cover the most common tasks you&rsquo;ll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.
+Check out the <a href="https://helm.sh/docs/">official documentation page</a> to learn more about Helm.</p>
+<p>Good luck!</p>
 <h2 id="links-">Links :</h2>
 <p>202405161033</p>
 <p><a href="https://helm.sh/">https://helm.sh/</a></p>
+<p><a href="https://helm.sh/docs/">https://helm.sh/docs/</a></p>
 ]]></content:encoded>
     </item>
     

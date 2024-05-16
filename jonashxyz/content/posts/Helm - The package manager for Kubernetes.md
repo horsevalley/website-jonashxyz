@@ -134,8 +134,14 @@ mychart/
     - **Example**: `helm repo list`
 
 These commands cover the most common tasks you'll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.
+Check out the [official documentation page](https://helm.sh/docs/) to learn more about Helm.
+
+Good luck!
+
 ## Links :
 
 202405161033
 
 https://helm.sh/
+
+https://helm.sh/docs/
