@@ -3,10 +3,25 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jonash.xyz/tags/article/</loc>
-    <lastmod>2024-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/devops/</loc>
-    <lastmod>2024-05-16T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/networking/</loc>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/</loc>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/</loc>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/understanding-network-prefixes/</loc>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/why-is-cidr-routing-more-efficient-than-classful-network-design/</loc>
+    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/helm/</loc>
     <lastmod>2024-05-16T00:00:00+00:00</lastmod>
@@ -15,12 +30,6 @@
     <lastmod>2024-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/kubernetes/</loc>
-    <lastmod>2024-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/posts/</loc>
-    <lastmod>2024-05-16T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/tags/</loc>
     <lastmod>2024-05-16T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/posts/kubernetes---understanding-the-relationship-between-nodes-and-pods/</loc>
