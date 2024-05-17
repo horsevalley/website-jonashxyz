@@ -10,9 +10,9 @@ date: "2024-05-17"
 draft: false
 ---
 
-CIDR (Classless Inter-Domain Routing) is more efficient than the older classful network design for several key reasons:
+Classless Inter-Domain Routing (CIDR) is more efficient than the older classful network design for several key reasons;
 
-## Flexible Subnetting and Address Allocation
+## 1. Flexible Subnetting and Address Allocation
 
 ### Classful Network Design:
 
@@ -28,7 +28,7 @@ CIDR (Classless Inter-Domain Routing) is more efficient than the older classful 
 - Example: A CIDR block like 192.168.0.0/22 can allocate 1,024 addresses (covering 192.168.0.0 to 192.168.3.255), which is more efficient than allocating a larger block unnecessarily.
 - This flexibility reduces wastage and allows for better utilization of IP address space.
 
-## Simplified Routing and Reduced Routing Table Size
+## 2. Simplified Routing and Reduced Routing Table Size
 
 ### Classful Network Design
 
@@ -41,7 +41,7 @@ CIDR (Classless Inter-Domain Routing) is more efficient than the older classful 
 - Example: Multiple networks like 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24, and 192.168.3.0/24 can be aggregated into a single CIDR block 192.168.0.0/22.
 - This reduces the number of entries in routing tables, leading to faster and more efficient routing.
 
-## Improved Internet Scalability
+## 3. Improved Internet Scalability
 
 ### Classful Network Design
 
@@ -54,7 +54,7 @@ CIDR (Classless Inter-Domain Routing) is more efficient than the older classful 
 - Supports hierarchical IP address allocation, which improves the scalability of the global routing system.
 - Internet Service Providers (ISPs) can allocate IP addresses more efficiently, reducing the need for frequent renumbering and reallocation.
 
-## Enhanced Network Design Flexibility
+## 4. Enhanced Network Design Flexibility
 
 ### Classful Network Design
 

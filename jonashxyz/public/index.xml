@@ -116,10 +116,10 @@ A network prefix is a part of an IP address that indicates the network to which 
       <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/why-is-cidr-routing-more-efficient-than-classful-network-design/</guid>
-      <description>CIDR (Classless Inter-Domain Routing) is more efficient than the older classful network design for several key reasons:
-Flexible Subnetting and Address Allocation Classful Network Design: IP addresses were divided into fixed classes (A, B, C, D, E). Class A: 16 million addresses (8-bit network prefix). Class B: 65,536 addresses (16-bit network prefix). Class C: 256 addresses (24-bit network prefix). This fixed structure often led to significant wastage of IP addresses. For example, a network needing 300 addresses would require a Class B allocation, wasting most of the 65,536 addresses.</description>
-      <content:encoded><![CDATA[<p>CIDR (Classless Inter-Domain Routing) is more efficient than the older classful network design for several key reasons:</p>
-<h2 id="flexible-subnetting-and-address-allocation">Flexible Subnetting and Address Allocation</h2>
+      <description>Classless Inter-Domain Routing (CIDR) is more efficient than the older classful network design for several key reasons;
+1. Flexible Subnetting and Address Allocation Classful Network Design: IP addresses were divided into fixed classes (A, B, C, D, E). Class A: 16 million addresses (8-bit network prefix). Class B: 65,536 addresses (16-bit network prefix). Class C: 256 addresses (24-bit network prefix). This fixed structure often led to significant wastage of IP addresses.</description>
+      <content:encoded><![CDATA[<p>Classless Inter-Domain Routing (CIDR) is more efficient than the older classful network design for several key reasons;</p>
+<h2 id="1-flexible-subnetting-and-address-allocation">1. Flexible Subnetting and Address Allocation</h2>
 <h3 id="classful-network-design">Classful Network Design:</h3>
 <ul>
 <li>IP addresses were divided into fixed classes (A, B, C, D, E).</li>
@@ -134,7 +134,7 @@ Flexible Subnetting and Address Allocation Classful Network Design: IP addresses
 <li>Example: A CIDR block like 192.168.0.0/22 can allocate 1,024 addresses (covering 192.168.0.0 to 192.168.3.255), which is more efficient than allocating a larger block unnecessarily.</li>
 <li>This flexibility reduces wastage and allows for better utilization of IP address space.</li>
 </ul>
-<h2 id="simplified-routing-and-reduced-routing-table-size">Simplified Routing and Reduced Routing Table Size</h2>
+<h2 id="2-simplified-routing-and-reduced-routing-table-size">2. Simplified Routing and Reduced Routing Table Size</h2>
 <h3 id="classful-network-design-1">Classful Network Design</h3>
 <ul>
 <li>Each network class required its entry in routing tables.</li>
@@ -146,7 +146,7 @@ Flexible Subnetting and Address Allocation Classful Network Design: IP addresses
 <li>Example: Multiple networks like 192.168.0.0/24, 192.168.1.0/24, 192.168.2.0/24, and 192.168.3.0/24 can be aggregated into a single CIDR block 192.168.0.0/22.</li>
 <li>This reduces the number of entries in routing tables, leading to faster and more efficient routing.</li>
 </ul>
-<h2 id="improved-internet-scalability">Improved Internet Scalability</h2>
+<h2 id="3-improved-internet-scalability">3. Improved Internet Scalability</h2>
 <h3 id="classful-network-design-2">Classful Network Design</h3>
 <ul>
 <li>The rapid growth of the Internet led to the exhaustion of available Class B and C addresses.</li>
@@ -158,7 +158,7 @@ Flexible Subnetting and Address Allocation Classful Network Design: IP addresses
 <li>Supports hierarchical IP address allocation, which improves the scalability of the global routing system.</li>
 <li>Internet Service Providers (ISPs) can allocate IP addresses more efficiently, reducing the need for frequent renumbering and reallocation.</li>
 </ul>
-<h2 id="enhanced-network-design-flexibility">Enhanced Network Design Flexibility</h2>
+<h2 id="4-enhanced-network-design-flexibility">4. Enhanced Network Design Flexibility</h2>
 <h3 id="classful-network-design-3">Classful Network Design</h3>
 <ul>
 <li>Networks were constrained to predefined sizes, making it difficult to design networks that matched organizational needs precisely.</li>
