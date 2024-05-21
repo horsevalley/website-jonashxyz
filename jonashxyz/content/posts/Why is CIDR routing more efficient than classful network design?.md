@@ -83,3 +83,33 @@ By adopting CIDR, the efficiency of IP address allocation and routing is signifi
 ## Links:
 
 202405171433
+
+[IP Address Guide](https://www.ipaddressguide.com/) provides detailed explanations and tools for understanding and calculating IP addresses and subnets.
+
+[RFC 1519](https://tools.ietf.org/html/rfc1519) is the original document that specifies CIDR.
+
+[RFC 1918](https://tools.ietf.org/html/rfc1918) discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.
+
+[IETF](https://www.ietf.org/) publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.
+
+[Classless Inter-Domain Routing](https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)
+
+[Network Computing](https://www.networkcomputing.com/) offers a variety of articles and tutorials on networking topics.
+
+[Cisco Documentation](https://www.cisco.com/c/en/us/support/index.html) provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.
+
+[Juniper Networks](https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html) offers comprehensive technical documentation on IP networking and related topics.
+
+[IEEE Xplore](https://ieeexplore.ieee.org/) is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.
+
+[ACM Digital Library](https://dl.acm.org/) provides access to a vast collection of research articles and papers on computer science, including networking.
+
+### Books
+1. **"Computer Networks" by Andrew S. Tanenbaum and David J. Wetherall**
+   - A comprehensive textbook covering a wide range of topics in computer networking, including IP addressing and subnetting.
+
+2. **"TCP/IP Illustrated, Volume 1: The Protocols" by W. Richard Stevens**
+   - A detailed guide to the TCP/IP protocol suite, providing in-depth coverage of IP networking concepts.
+
+3. **"Internetworking with TCP/IP Volume One" by Douglas E. Comer**
+   - Another authoritative resource that explains the principles of TCP/IP networking, including IP addressing and CIDR.

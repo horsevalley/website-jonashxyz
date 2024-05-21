@@ -87,8 +87,20 @@ Each department gets a subnet that closely matches its needs, optimizing IP addr
 
 Network prefixes are crucial for defining the structure and size of IP networks. The length of the prefix determines the division between the network and host portions of an IP address, impacting the number of available networks and hosts. By using CIDR notation and flexible prefix lengths, network administrators can efficiently allocate IP address space, design scalable networks, and optimize routing performance.
 
-
-
 ## Links:
 
 202405171407
+
+[RFC 1918](https://tools.ietf.org/html/rfc1918) discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.
+
+[IP Address Guide](https://www.ipaddressguide.com/) provides detailed explanations and tools for understanding and calculating IP addresses and subnets.
+
+[Network Computing](https://www.networkcomputing.com/) offers a variety of articles and tutorials on networking topics.
+
+[Cisco Documentation](https://www.cisco.com/c/en/us/support/index.html) provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.
+
+[Juniper Networks](https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html) offers comprehensive technical documentation on IP networking and related topics.
+
+[IEEE Xplore](https://ieeexplore.ieee.org/) is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.
+
+[ACM Digital Library](https://dl.acm.org/) provides access to a vast collection of research articles and papers on computer science, including networking.
