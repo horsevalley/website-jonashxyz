@@ -3,18 +3,27 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://jonash.xyz/tags/article/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/cli/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/tags/tui/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jonash.xyz/posts/yazi---a-blazing-fast-terminal-file-manager/</loc>
+    <lastmod>2024-05-21T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/devops/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/tags/networking/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/posts/</loc>
-    <lastmod>2024-05-17T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/tags/</loc>
     <lastmod>2024-05-17T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/posts/understanding-network-prefixes/</loc>
@@ -34,9 +43,6 @@
   </url><url>
     <loc>https://jonash.xyz/posts/kubernetes---understanding-the-relationship-between-nodes-and-pods/</loc>
     <lastmod>2024-05-14T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jonash.xyz/tags/cli/</loc>
-    <lastmod>2024-03-24T13:06:35+01:00</lastmod>
   </url><url>
     <loc>https://jonash.xyz/posts/convert-svg-to-pdf-using-inkscape/</loc>
     <lastmod>2024-03-24T13:06:35+01:00</lastmod>

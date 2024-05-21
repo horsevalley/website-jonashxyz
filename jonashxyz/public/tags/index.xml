@@ -6,13 +6,33 @@
     <description>Recent content in Tags on Jonas Hestdahl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 17 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Article</title>
       <link>https://jonash.xyz/tags/article/</link>
-      <pubDate>Fri, 17 May 2024 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/tags/article/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>CLI</title>
+      <link>https://jonash.xyz/tags/cli/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/tags/cli/</guid>
+      <description></description>
+      <content:encoded><![CDATA[]]></content:encoded>
+    </item>
+    
+    <item>
+      <title>TUI</title>
+      <link>https://jonash.xyz/tags/tui/</link>
+      <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/tags/tui/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
@@ -53,16 +73,6 @@
       <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/tags/kubernetes/</guid>
-      <description></description>
-      <content:encoded><![CDATA[]]></content:encoded>
-    </item>
-    
-    <item>
-      <title>CLI</title>
-      <link>https://jonash.xyz/tags/cli/</link>
-      <pubDate>Sun, 24 Mar 2024 13:06:35 +0100</pubDate>
-      
-      <guid>https://jonash.xyz/tags/cli/</guid>
       <description></description>
       <content:encoded><![CDATA[]]></content:encoded>
     </item>
