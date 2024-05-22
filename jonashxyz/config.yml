@@ -99,8 +99,8 @@ params:
     # socialIcons:
     #     - name: twitter
     #       url: "https://twitter.com/"
-    #     - name: stackoverflow
-    #       url: "https://stackoverflow.com"
+    #     # - name: stackoverflow
+    #     #   url: "https://stackoverflow.com"
     #     - name: github
     #       url: "https://github.com/"
 
@@ -142,14 +142,18 @@ menu:
           name: "Articles"
           url: /tags/article/
           weight: 20
+        - identifier: "Archives"
+          name: "Archives"
+          url: /archives/
+          weight: 30
         - identifier: search
           name: Search
           url: /search/
-          weight: 30
-        # - identifier: contact
-        #   name: Contact
-        #   url: /contact/
-        #   weight: 40
+          weight: 40
+        - identifier: "Contact"
+          name: "Contact"
+          url: /contact/
+          weight: 50
 
         # - identifier: example
         #   name: example.org

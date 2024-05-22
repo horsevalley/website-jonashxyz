@@ -53,7 +53,8 @@ draft : false
 ---
 ```
 - Create a new post: `hugo new posts/my-first-post.md`
-- Open the file in a text editor, and you'll see some front matter at the top. Below this, add your content.
+- Open the file in a text editor, and you'll see some front matter at the top. Below this, add your content 
+    - It's important that you write your content in [markdown](https://www.markdownguide.org/basic-syntax/) format
 
 ## Step 5: Start the HUGO Server
 - Run `hugo server ` in your site directory.

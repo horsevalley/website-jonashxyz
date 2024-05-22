@@ -72,7 +72,11 @@ draft : false
 ---
 </code></pre><ul>
 <li>Create a new post: <code>hugo new posts/my-first-post.md</code></li>
-<li>Open the file in a text editor, and you&rsquo;ll see some front matter at the top. Below this, add your content.</li>
+<li>Open the file in a text editor, and you&rsquo;ll see some front matter at the top. Below this, add your content
+<ul>
+<li>It&rsquo;s important that you write your content in <a href="https://www.markdownguide.org/basic-syntax/">markdown</a> format</li>
+</ul>
+</li>
 </ul>
 <h2 id="step-5-start-the-hugo-server">Step 5: Start the HUGO Server</h2>
 <ul>
