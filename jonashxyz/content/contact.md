@@ -3,15 +3,6 @@ title: "Contact me"
 layout: "contact"
 url: "/contact/"
 summary: "contact"
-params:
-  homeInfoParams:
-        Title: "Get in touch"
-        Content: If you want to contact me, here are my socials and e-mail.
-  socialIcons:
-    - name: twitter
-      url: "https://twitter.com/"
-    - name: github
-      url: "https://github.com/"
 ShowReadingTime: false
 comments: false
 ---
