@@ -13,6 +13,7 @@ params:
     - name: github
       url: "https://github.com/"
 ShowReadingTime: false
+comments: false
 ---
 
 You can get in touch with me in the following ways: 
