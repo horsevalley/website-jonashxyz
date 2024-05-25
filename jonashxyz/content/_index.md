@@ -1,5 +1,5 @@
 ---
-title : "Hello there, fellow traveler!"
+title : "My Tech Blog"
 date : 2024-03-10T16:13:41+01:00
 draft : false
 ---
