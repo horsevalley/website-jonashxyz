@@ -26,6 +26,9 @@ I'm using Arch Linux and the Obsidian electron AppImage from AUR. It works great
 # Navigate to your repository directory
 cd ~/obsidian/
 
+# Fetch changes from remote repo and merge updates into current local branch
+git pull --rebase
+
 # Add all changes to git
 git add .
 

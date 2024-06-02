@@ -533,6 +533,9 @@ How the script works Auto-pushes Obsidian notes to GitHub via a cronjob every 30
 </span></span><span class="line"><span class="cl"><span class="c1"># Navigate to your repository directory</span>
 </span></span><span class="line"><span class="cl"><span class="nb">cd</span> ~/obsidian/
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Fetch changes from remote repo and merge updates into current local branch</span>
+</span></span><span class="line"><span class="cl">git pull --rebase
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Add all changes to git</span>
 </span></span><span class="line"><span class="cl">git add .
 </span></span><span class="line"><span class="cl">
