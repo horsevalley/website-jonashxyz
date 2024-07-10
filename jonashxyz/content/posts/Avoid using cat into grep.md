@@ -27,13 +27,14 @@ The quick brown fox jumps over the lazy dog.
 foxes are beautiful animals
 ```
 
-Now take a look at the output, using only grep. Do you notice a difference?
+Now take a look at the output, using only grep;
 
 ```bash
 grep -i fox file1 file2
 file1:The quick brown fox jumps over the lazy dog.
 file2:foxes are beautiful animals
 ```
+Do you notice the difference?
 
 Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.
 

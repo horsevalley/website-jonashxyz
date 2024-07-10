@@ -90,11 +90,12 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat file1 file2 <span class="p">|</span> grep -i fox
 </span></span><span class="line"><span class="cl">The quick brown fox jumps over the lazy dog.
 </span></span><span class="line"><span class="cl">foxes are beautiful animals
-</span></span></code></pre></div><p>Now take a look at the output, using only grep. Do you notice a difference?</p>
+</span></span></code></pre></div><p>Now take a look at the output, using only grep;</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep -i fox file1 file2
 </span></span><span class="line"><span class="cl">file1:The quick brown fox jumps over the lazy dog.
 </span></span><span class="line"><span class="cl">file2:foxes are beautiful animals
-</span></span></code></pre></div><p>Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.</p>
+</span></span></code></pre></div><p>Do you notice the difference?</p>
+<p>Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.</p>
 <p>Changing a bad habit that is engrained in your mind can be a real struggle, but I will do my best to adopt this new way of searching.</p>
 <h2 id="links-">Links :</h2>
 <p>202407101228</p>
