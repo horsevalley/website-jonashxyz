@@ -14,19 +14,107 @@
       
       <guid>https://jonash.xyz/posts/helm---the-package-manager-for-kubernetes/</guid>
       <description>#Kubernetes #Helm #DevOps
-Helm Helm is the best way to find, share, and use software built for Kubernetes. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
-Helm is a graduated project in the CNCF and is maintained by the Helm community.
+Helm Helm is the best way to find, share, and use software built for Kubernetes . It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
+Helm is a graduated project in the CNCF and is maintained by the Helm community .
 What is a helm chart? a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</description>
       <content:encoded><![CDATA[<p>#Kubernetes #Helm #DevOps</p>
 <h2 id="helm">Helm</h2>
-<p>Helm is the best way to find, share, and use software built for <a href="https://kubernetes.io">Kubernetes</a>. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
-<p>Helm is a graduated project in the <a href="https://cncf.io">CNCF</a> and is maintained by the <a href="https://github.com/helm/community">Helm community</a>.</p>
+<p>Helm is the best way to find, share, and use software built for <a
+
+	
+	
+		href = "https://kubernetes.io"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Kubernetes
+	</span>
+
+</a>
+. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
+<p>Helm is a graduated project in the <a
+
+	
+	
+		href = "https://cncf.io"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		CNCF
+	</span>
+
+</a>
+ and is maintained by the <a
+
+	
+	
+		href = "https://github.com/helm/community"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Helm community
+	</span>
+
+</a>
+.</p>
 <h2 id="what-is-a-helm-chart">What is a helm chart?</h2>
 <p>a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</p>
 <p>In other words, a Helm chart is a package that contains all the necessary information and resources to deploy an application or service onto a Kubernetes cluster. It includes a collection of files that describe a related set of Kubernetes resources.</p>
 <p>Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.</p>
 <h2 id="how-to-install-helm">How to install helm</h2>
-<p><a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a></p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/docs/intro/install/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/docs/intro/install/
+	</span>
+
+</a>
+</p>
 <h3 id="example-structure-of-a-helm-chart">Example Structure of a Helm Chart</h3>
 <pre tabindex="0"><code>mychart/
   Chart.yaml        # Chart metadata
@@ -46,7 +134,29 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 <p><strong>Values.yaml</strong>: This file defines the default configuration values for the chart. Users can override these values when they install or upgrade a chart to customize the deployment.</p>
 </li>
 <li>
-<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a href="https://go.dev/">Go</a> templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
+<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a
+
+	
+	
+		href = "https://go.dev/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Go
+	</span>
+
+</a>
+ templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
 </li>
 <li>
 <p><strong>Charts</strong>: This directory (optional) can contain dependencies, which are other charts that this chart depends on.</p>
@@ -200,12 +310,78 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 </li>
 </ol>
 <p>These commands cover the most common tasks you&rsquo;ll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.
-Check out the <a href="https://helm.sh/docs/">official documentation page</a> to learn more about Helm.</p>
+Check out the <a
+
+	
+	
+		href = "https://helm.sh/docs/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		official documentation page
+	</span>
+
+</a>
+ to learn more about Helm.</p>
 <p>Good luck!</p>
 <h2 id="links-">Links :</h2>
 <p>202405161033</p>
-<p><a href="https://helm.sh/">https://helm.sh/</a></p>
-<p><a href="https://helm.sh/docs/">https://helm.sh/docs/</a></p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/docs/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/docs/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     

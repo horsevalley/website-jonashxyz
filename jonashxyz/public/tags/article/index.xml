@@ -6,27 +6,388 @@
     <description>Recent content in Article on Jonas Hestdahl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/article/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/article/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avoid using cat into grep</title>
+      <link>https://jonash.xyz/posts/avoid-using-cat-into-grep/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/posts/avoid-using-cat-into-grep/</guid>
+      <description>Let me open by saying that I am guilty of doing this myself.
+Instead of doing cat file1 file2 | grep -i searchTerm, it is better to use grep directly. The result is not only more efficient, but it&amp;rsquo;s more informative aswell.
+Here is why I came across a video by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of cat , and what it&amp;rsquo;s really meant for, which is concatenate and write files.</description>
+      <content:encoded><![CDATA[<p>Let me open by saying that I am guilty of doing this myself.</p>
+<p>Instead of doing <code>cat file1 file2 | grep -i searchTerm</code>, it is better to use <a
+
+	
+	
+		href = "https://www.gnu.org/software/grep/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		grep
+	</span>
+
+</a>
+ directly. The result is not only more efficient, but it&rsquo;s more informative aswell.</p>
+<h2 id="here-is-why">Here is why</h2>
+<p>I came across a <a
+
+	
+	
+		href = "https://www.youtube.com/watch?v=82NBMvx6vFY"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		video
+	</span>
+
+</a>
+ by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of <a
+
+	
+	
+		href = "https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		cat
+	</span>
+
+</a>
+, and what it&rsquo;s really meant for, which is concatenate and write files.</p>
+<p>Look at the following output of running <code>cat file1 file2 | grep -i fox</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat file1 file2 <span class="p">|</span> grep -i fox
+</span></span><span class="line"><span class="cl">The quick brown fox jumps over the lazy dog.
+</span></span><span class="line"><span class="cl">foxes are beautiful animals
+</span></span></code></pre></div><p>Now take a look at the output, using only grep. Do you notice a difference?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep -i fox file1 file2
+</span></span><span class="line"><span class="cl">file1:The quick brown fox jumps over the lazy dog.
+</span></span><span class="line"><span class="cl">file2:foxes are beautiful animals
+</span></span></code></pre></div><p>Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.</p>
+<p>Changing a bad habit that is engrained in your mind can be a real struggle, but I will do my best to adopt this new way of searching.</p>
+<h2 id="links-">Links :</h2>
+<p>202407101228</p>
+<p><a
+
+	
+	
+		href = "https://www.youtube.com/watch?v=82NBMvx6vFY"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.youtube.com/watch?v=82NBMvx6vFY
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/grep/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/grep/
+	</span>
+
+</a>
+</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Yazi - a Blazing Fast Terminal File Manager written in Rust</title>
       <link>https://jonash.xyz/posts/yazi---a-blazing-fast-terminal-file-manager/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/yazi---a-blazing-fast-terminal-file-manager/</guid>
-      <description>I&amp;rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it! It&amp;rsquo;s written in Rust, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources. And the best part; it has vim keybindings!
-Not convinced yet? Check out the GitHub page, and scroll down a bit until you reach &amp;ldquo;example.mp4&amp;rdquo;. You&amp;rsquo;ll see a video that demonstrates some of its cool features.</description>
+      <description>I&amp;rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it! It&amp;rsquo;s written in Rust , so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources. And the best part; it has vim keybindings!
+Not convinced yet? Check out the GitHub page , and scroll down a bit until you reach &amp;ldquo;example.mp4&amp;rdquo;. You&amp;rsquo;ll see a video that demonstrates some of its cool features.</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it!
-It&rsquo;s written in <a href="https://www.rust-lang.org/">Rust</a>, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources.
+It&rsquo;s written in <a
+
+	
+	
+		href = "https://www.rust-lang.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Rust
+	</span>
+
+</a>
+, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources.
 And the best part; it has vim keybindings!</p>
-<p>Not convinced yet? Check out the <a href="https://github.com/sxyazi/yazi">GitHub page</a>, and scroll down a bit until you reach &ldquo;example.mp4&rdquo;. You&rsquo;ll see a video that demonstrates some of its cool features.</p>
-<p>You can check out other nice features <a href="https://yazi-rs.github.io/features/">here</a>, like scrollable preview, bulk rename and integration with tools like <a href="https://github.com/sharkdp/fd">fd</a>, <a href="https://github.com/BurntSushi/ripgrep">rg</a>, <a href="https://github.com/jstkdng/ueberzugpp">ueberzugpp</a> and more.</p>
+<p>Not convinced yet? Check out the <a
+
+	
+	
+		href = "https://github.com/sxyazi/yazi"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		GitHub page
+	</span>
+
+</a>
+, and scroll down a bit until you reach &ldquo;example.mp4&rdquo;. You&rsquo;ll see a video that demonstrates some of its cool features.</p>
+<p>You can check out other nice features <a
+
+	
+	
+		href = "https://yazi-rs.github.io/features/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		here
+	</span>
+
+</a>
+, like scrollable preview, bulk rename and integration with tools like <a
+
+	
+	
+		href = "https://github.com/sharkdp/fd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		fd
+	</span>
+
+</a>
+, <a
+
+	
+	
+		href = "https://github.com/BurntSushi/ripgrep"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		rg
+	</span>
+
+</a>
+, <a
+
+	
+	
+		href = "https://github.com/jstkdng/ueberzugpp"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ueberzugpp
+	</span>
+
+</a>
+ and more.</p>
 <h2 id="installation-and-quick-start">Installation and quick start</h2>
-<p><a href="https://yazi-rs.github.io/docs/installation/">https://yazi-rs.github.io/docs/installation/</a></p>
+<p><a
+
+	
+	
+		href = "https://yazi-rs.github.io/docs/installation/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://yazi-rs.github.io/docs/installation/
+	</span>
+
+</a>
+</p>
 <p>Good luck!</p>
 <h2 id="links">Links:</h2>
 <p>202405211803</p>
-<p><a href="https://github.com/sxyazi/yazi">https://github.com/sxyazi/yazi</a></p>
-<p><a href="https://yazi-rs.github.io/">https://yazi-rs.github.io/</a></p>
+<p><a
+
+	
+	
+		href = "https://github.com/sxyazi/yazi"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://github.com/sxyazi/yazi
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://yazi-rs.github.io/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://yazi-rs.github.io/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -130,13 +491,167 @@ A network prefix is a part of an IP address that indicates the network to which 
 <p>Network prefixes are crucial for defining the structure and size of IP networks. The length of the prefix determines the division between the network and host portions of an IP address, impacting the number of available networks and hosts. By using CIDR notation and flexible prefix lengths, network administrators can efficiently allocate IP address space, design scalable networks, and optimize routing performance.</p>
 <h2 id="links">Links:</h2>
 <p>202405171407</p>
-<p><a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a> discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
-<p><a href="https://www.ipaddressguide.com/">IP Address Guide</a> provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
-<p><a href="https://www.networkcomputing.com/">Network Computing</a> offers a variety of articles and tutorials on networking topics.</p>
-<p><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Documentation</a> provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
-<p><a href="https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html">Juniper Networks</a> offers comprehensive technical documentation on IP networking and related topics.</p>
-<p><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a> is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
-<p><a href="https://dl.acm.org/">ACM Digital Library</a> provides access to a vast collection of research articles and papers on computer science, including networking.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1918"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1918
+	</span>
+
+</a>
+ discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
+<p><a
+
+	
+	
+		href = "https://www.ipaddressguide.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IP Address Guide
+	</span>
+
+</a>
+ provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
+<p><a
+
+	
+	
+		href = "https://www.networkcomputing.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Network Computing
+	</span>
+
+</a>
+ offers a variety of articles and tutorials on networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://www.cisco.com/c/en/us/support/index.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Cisco Documentation
+	</span>
+
+</a>
+ provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
+<p><a
+
+	
+	
+		href = "https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Juniper Networks
+	</span>
+
+</a>
+ offers comprehensive technical documentation on IP networking and related topics.</p>
+<p><a
+
+	
+	
+		href = "https://ieeexplore.ieee.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IEEE Xplore
+	</span>
+
+</a>
+ is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://dl.acm.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ACM Digital Library
+	</span>
+
+</a>
+ provides access to a vast collection of research articles and papers on computer science, including networking.</p>
 ]]></content:encoded>
     </item>
     
@@ -211,16 +726,236 @@ A network prefix is a part of an IP address that indicates the network to which 
 <p>By adopting CIDR, the efficiency of IP address allocation and routing is significantly improved, making it a preferred choice for modern networking.</p>
 <h2 id="links">Links:</h2>
 <p>202405171433</p>
-<p><a href="https://www.ipaddressguide.com/">IP Address Guide</a> provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
-<p><a href="https://tools.ietf.org/html/rfc1519">RFC 1519</a> is the original document that specifies CIDR.</p>
-<p><a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a> discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
-<p><a href="https://www.ietf.org/">IETF</a> publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.</p>
-<p><a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Classless Inter-Domain Routing</a></p>
-<p><a href="https://www.networkcomputing.com/">Network Computing</a> offers a variety of articles and tutorials on networking topics.</p>
-<p><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Documentation</a> provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
-<p><a href="https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html">Juniper Networks</a> offers comprehensive technical documentation on IP networking and related topics.</p>
-<p><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a> is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
-<p><a href="https://dl.acm.org/">ACM Digital Library</a> provides access to a vast collection of research articles and papers on computer science, including networking.</p>
+<p><a
+
+	
+	
+		href = "https://www.ipaddressguide.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IP Address Guide
+	</span>
+
+</a>
+ provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1519"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1519
+	</span>
+
+</a>
+ is the original document that specifies CIDR.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1918"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1918
+	</span>
+
+</a>
+ discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
+<p><a
+
+	
+	
+		href = "https://www.ietf.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IETF
+	</span>
+
+</a>
+ publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.</p>
+<p><a
+
+	
+	
+		href = "https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Classless Inter-Domain Routing
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.networkcomputing.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Network Computing
+	</span>
+
+</a>
+ offers a variety of articles and tutorials on networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://www.cisco.com/c/en/us/support/index.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Cisco Documentation
+	</span>
+
+</a>
+ provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
+<p><a
+
+	
+	
+		href = "https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Juniper Networks
+	</span>
+
+</a>
+ offers comprehensive technical documentation on IP networking and related topics.</p>
+<p><a
+
+	
+	
+		href = "https://ieeexplore.ieee.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IEEE Xplore
+	</span>
+
+</a>
+ is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://dl.acm.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ACM Digital Library
+	</span>
+
+</a>
+ provides access to a vast collection of research articles and papers on computer science, including networking.</p>
 <h3 id="books">Books</h3>
 <ol>
 <li>
@@ -252,19 +987,107 @@ A network prefix is a part of an IP address that indicates the network to which 
       
       <guid>https://jonash.xyz/posts/helm---the-package-manager-for-kubernetes/</guid>
       <description>#Kubernetes #Helm #DevOps
-Helm Helm is the best way to find, share, and use software built for Kubernetes. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
-Helm is a graduated project in the CNCF and is maintained by the Helm community.
+Helm Helm is the best way to find, share, and use software built for Kubernetes . It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
+Helm is a graduated project in the CNCF and is maintained by the Helm community .
 What is a helm chart? a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</description>
       <content:encoded><![CDATA[<p>#Kubernetes #Helm #DevOps</p>
 <h2 id="helm">Helm</h2>
-<p>Helm is the best way to find, share, and use software built for <a href="https://kubernetes.io">Kubernetes</a>. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
-<p>Helm is a graduated project in the <a href="https://cncf.io">CNCF</a> and is maintained by the <a href="https://github.com/helm/community">Helm community</a>.</p>
+<p>Helm is the best way to find, share, and use software built for <a
+
+	
+	
+		href = "https://kubernetes.io"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Kubernetes
+	</span>
+
+</a>
+. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
+<p>Helm is a graduated project in the <a
+
+	
+	
+		href = "https://cncf.io"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		CNCF
+	</span>
+
+</a>
+ and is maintained by the <a
+
+	
+	
+		href = "https://github.com/helm/community"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Helm community
+	</span>
+
+</a>
+.</p>
 <h2 id="what-is-a-helm-chart">What is a helm chart?</h2>
 <p>a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</p>
 <p>In other words, a Helm chart is a package that contains all the necessary information and resources to deploy an application or service onto a Kubernetes cluster. It includes a collection of files that describe a related set of Kubernetes resources.</p>
 <p>Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.</p>
 <h2 id="how-to-install-helm">How to install helm</h2>
-<p><a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a></p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/docs/intro/install/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/docs/intro/install/
+	</span>
+
+</a>
+</p>
 <h3 id="example-structure-of-a-helm-chart">Example Structure of a Helm Chart</h3>
 <pre tabindex="0"><code>mychart/
   Chart.yaml        # Chart metadata
@@ -284,7 +1107,29 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 <p><strong>Values.yaml</strong>: This file defines the default configuration values for the chart. Users can override these values when they install or upgrade a chart to customize the deployment.</p>
 </li>
 <li>
-<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a href="https://go.dev/">Go</a> templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
+<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a
+
+	
+	
+		href = "https://go.dev/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Go
+	</span>
+
+</a>
+ templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
 </li>
 <li>
 <p><strong>Charts</strong>: This directory (optional) can contain dependencies, which are other charts that this chart depends on.</p>
@@ -438,12 +1283,78 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 </li>
 </ol>
 <p>These commands cover the most common tasks you&rsquo;ll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.
-Check out the <a href="https://helm.sh/docs/">official documentation page</a> to learn more about Helm.</p>
+Check out the <a
+
+	
+	
+		href = "https://helm.sh/docs/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		official documentation page
+	</span>
+
+</a>
+ to learn more about Helm.</p>
 <p>Good luck!</p>
 <h2 id="links-">Links :</h2>
 <p>202405161033</p>
-<p><a href="https://helm.sh/">https://helm.sh/</a></p>
-<p><a href="https://helm.sh/docs/">https://helm.sh/docs/</a></p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/docs/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/docs/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -484,7 +1395,29 @@ What are Pods? A pod is the smallest deployable unit in Kubernetes and serves as
 <p>This relationship enables Kubernetes to manage large-scale, distributed environments efficiently, ensuring that applications are reliably available and can be scaled as needed across the various nodes in the cluster.</p>
 <h2 id="links">Links:</h2>
 <p>202405142258</p>
-<p>Kubernetes documentation home: <a href="https://kubernetes.io/docs/home/">https://kubernetes.io/docs/home/</a></p>
+<p>Kubernetes documentation home: <a
+
+	
+	
+		href = "https://kubernetes.io/docs/home/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://kubernetes.io/docs/home/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -611,7 +1544,29 @@ Fast and Efficient: HUGO takes your content, which you can write in Markdown (a 
 </ul>
 <h2 id="step-3-add-a-theme">Step 3: Add a Theme</h2>
 <ul>
-<li>Find a theme you like from <a href="https://themes.gohugo.io/">HUGO Themes</a>.</li>
+<li>Find a theme you like from <a
+
+	
+	
+		href = "https://themes.gohugo.io/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		HUGO Themes
+	</span>
+
+</a>
+.</li>
 <li>Clone the theme into your project: e.g.</li>
 </ul>
 <pre tabindex="0"><code>git clone https://github.com/reorx/hugo-PaperModX themes/PaperModX --depth=1
@@ -636,7 +1591,29 @@ draft : false
 <li>Create a new post: <code>hugo new posts/my-first-post.md</code></li>
 <li>Open the file in a text editor, and you&rsquo;ll see some front matter at the top. Below this, add your content
 <ul>
-<li>It&rsquo;s important that you write your content in <a href="https://www.markdownguide.org/basic-syntax/">markdown</a> format</li>
+<li>It&rsquo;s important that you write your content in <a
+
+	
+	
+		href = "https://www.markdownguide.org/basic-syntax/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		markdown
+	</span>
+
+</a>
+ format</li>
 </ul>
 </li>
 </ul>
@@ -653,11 +1630,77 @@ draft : false
 </ul>
 <pre tabindex="0"><code>  update_website=&#34;rsync -vrP --delete-after /home/jonash/dotfiles/website/website/jonashxyz/public/ root@jonash.xyz:/var/www/jonashxyz/&#34; \
 </code></pre><ul>
-<li>I got the alias from <a href="https://lukesmith.xyz/">Luke Smith</a></li>
+<li>I got the alias from <a
+
+	
+	
+		href = "https://lukesmith.xyz/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Luke Smith
+	</span>
+
+</a>
+</li>
 </ul>
 <h2 id="done">Done</h2>
-<p>Congratulations! You&rsquo;ve just created a website with HUGO. For more detailed instructions, visit the <a href="https://gohugo.io/documentation/">official HUGO documentation</a>.</p>
-<p>Also, read the documentation of your chosen theme, e.g. <a href="https://reorx.github.io/hugo-PaperModX/">PaperModX</a>.</p>
+<p>Congratulations! You&rsquo;ve just created a website with HUGO. For more detailed instructions, visit the <a
+
+	
+	
+		href = "https://gohugo.io/documentation/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		official HUGO documentation
+	</span>
+
+</a>
+.</p>
+<p>Also, read the documentation of your chosen theme, e.g. <a
+
+	
+	
+		href = "https://reorx.github.io/hugo-PaperModX/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		PaperModX
+	</span>
+
+</a>
+.</p>
 <p>Enjoy!</p>
 <p>Links:</p>
 <p>202403081313</p>
@@ -670,20 +1713,239 @@ draft : false
       <pubDate>Sun, 10 Mar 2024 23:38:13 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/how-to-live-an-unshackled-digital-life/</guid>
-      <description>Unshackle Your Digital Life Get a Google Pixel phone, so you can install GrapheneOS. I recommend Google Pixel 6a. Very cheap and very good. Get rid of all the apps you don&amp;rsquo;t need Sync your data with SyncThing Create your own NextCloud server Use VimWiki/Obsidian + vim/neovim to take notes in markdown, and take full ownership over your own data Use Linux on your personal computer(s) Use pass to store your accounts/passwords Don&amp;rsquo;t let proprietary software take your money and own YOUR data Never look back </description>
-      <content:encoded><![CDATA[<h2 id="unshackle-your-digital-life">Unshackle Your Digital Life</h2>
-<ol>
-<li>Get a Google Pixel phone, so you can install <a href="https://grapheneos.org/">GrapheneOS</a>. I recommend Google Pixel 6a. Very cheap and very good.
+      <description> Get a Google Pixel phone, so you can install GrapheneOS . I recommend Google Pixel 6a. Very cheap and very good. Get rid of all the apps you don&amp;rsquo;t need Sync your data with SyncThing Create your own NextCloud server Use VimWiki / Obsidian + vim/ neovim to take notes in markdown , and take full ownership over your own data Use Linux on your personal computer(s) Use pass to store your accounts/passwords Don&amp;rsquo;t let proprietary software take your money and own YOUR data Never look back </description>
+      <content:encoded><![CDATA[<ol>
+<li>Get a Google Pixel phone, so you can install <a
+
+	
+	
+		href = "https://grapheneos.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		GrapheneOS
+	</span>
+
+</a>
+. I recommend Google Pixel 6a. Very cheap and very good.
 <ul>
 <li>Get rid of all the apps you don&rsquo;t need</li>
 </ul>
 </li>
-<li>Sync your data with <a href="https://syncthing.net/">SyncThing</a></li>
-<li>Create your own <a href="https://landchad.net/nextcloud/">NextCloud</a> server</li>
-<li>Use <a href="https://github.com/vimwiki/vimwiki">VimWiki</a>/<a href="https://obsidian.md/">Obsidian</a> + vim/<a href="https://github.com/neovim/neovim">neovim</a> to take notes in <a href="https://www.markdownguide.org/getting-started/">markdown</a>, and take full ownership over your own data</li>
-<li>Use <a href="https://en.wikipedia.org/wiki/Linux">Linux</a> on your personal computer(s)</li>
-<li>Use <a href="https://www.passwordstore.org/">pass</a> to store your accounts/passwords</li>
-<li>Don&rsquo;t let <a href="https://en.wikipedia.org/wiki/Proprietary_software">proprietary software</a> take your money and own YOUR data</li>
+<li>Sync your data with <a
+
+	
+	
+		href = "https://syncthing.net/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		SyncThing
+	</span>
+
+</a>
+</li>
+<li>Create your own <a
+
+	
+	
+		href = "https://landchad.net/nextcloud/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		NextCloud
+	</span>
+
+</a>
+ server</li>
+<li>Use <a
+
+	
+	
+		href = "https://github.com/vimwiki/vimwiki"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		VimWiki
+	</span>
+
+</a>
+/<a
+
+	
+	
+		href = "https://obsidian.md/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Obsidian
+	</span>
+
+</a>
+ + vim/<a
+
+	
+	
+		href = "https://github.com/neovim/neovim"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		neovim
+	</span>
+
+</a>
+ to take notes in <a
+
+	
+	
+		href = "https://www.markdownguide.org/getting-started/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		markdown
+	</span>
+
+</a>
+, and take full ownership over your own data</li>
+<li>Use <a
+
+	
+	
+		href = "https://en.wikipedia.org/wiki/Linux"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Linux
+	</span>
+
+</a>
+ on your personal computer(s)</li>
+<li>Use <a
+
+	
+	
+		href = "https://www.passwordstore.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		pass
+	</span>
+
+</a>
+ to store your accounts/passwords</li>
+<li>Don&rsquo;t let <a
+
+	
+	
+		href = "https://en.wikipedia.org/wiki/Proprietary_software"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		proprietary software
+	</span>
+
+</a>
+ take your money and own YOUR data</li>
 <li>Never look back</li>
 </ol>
 ]]></content:encoded>
@@ -699,7 +1961,29 @@ draft : false
       <content:encoded><![CDATA[<h2 id="first-of-all-what-is-grub">First of all, what is GRUB?</h2>
 <p>GRUB is a boot loader, which lets you boot up your system. The abbreviation stands for GNU GRand Unified Bootloader, and is a boot loader package from the GNU Project. GRUB is the primary bootloader for many Linux distributions, allowing users to choose from multiple operating systems or different versions of the same operating system at boot time. It&rsquo;s designed to be highly configurable and supports a wide range of operating systems, not just Linux.</p>
 <h2 id="why-make-this-guide">Why make this guide?</h2>
-<p>The reason I made this simple guide is so you know what to do when you get to <a href="https://wiki.archlinux.org/title/Installation_guide">Arch Linux installation guide, chapter 3.8</a>.</p>
+<p>The reason I made this simple guide is to help myself remember how to set up grub bootloader in <a
+
+	
+	
+		href = "https://wiki.archlinux.org/title/Installation_guide#Boot_loader"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Arch Linux installation guide, chapter 3.8
+	</span>
+
+</a>
+.</p>
 <h2 id="grub-features-include">GRUB features include:</h2>
 <ul>
 <li>The ability to boot multiple operating systems, including Linux, Windows, and macOS.</li>
@@ -728,6 +2012,53 @@ draft : false
 <li>Finally, restart the machine by typing <code>reboot</code>: any partitions still mounted will be automatically unmounted by <em>systemd</em>.</li>
 <li>Remember to remove the installation medium and then login into the new system with the root account</li>
 </ul>
+<h2 id="links">Links:</h2>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/grub/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/grub/
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://wiki.archlinux.org/title/Installation_guide#Boot_loader"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://wiki.archlinux.org/title/Installation_guide#Boot_loader
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -737,18 +2068,216 @@ draft : false
       <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
-      <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
+      <description>These modern Linux tools might enhance your workflow &amp;lt;code&amp;gt;fd&amp;lt;/code&amp;gt; is a simple and fast file search tool, enhancing the Unix find command. &amp;lt;code&amp;gt;exa&amp;lt;/code&amp;gt; is a modern replacement for ls, enhancing file listing with better defaults. &amp;lt;code&amp;gt;dog&amp;lt;/code&amp;gt; is a modern, feature-rich DNS client for the command-line. &amp;lt;code&amp;gt;ncdu&amp;lt;/code&amp;gt; is a console disk usage analyzer for quick space management. &amp;lt;code&amp;gt;bat&amp;lt;/code&amp;gt; is a cat clone with syntax highlighting and Git integration for the command-line. &amp;lt;code&amp;gt;sd&amp;lt;/code&amp;gt; is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
       <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
 <ul>
-<li><a href="https://github.com/sharkdp/fd"><code>fd</code></a> is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
-<li><a href="https://github.com/ogham/exa"><code>exa</code></a> is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
-<li><a href="https://github.com/ogham/dog"><code>dog</code></a> is a modern, feature-rich DNS client for the command-line.</li>
-<li><a href="https://github.com/rofl0r/ncdu"><code>ncdu</code></a> is a console disk usage analyzer for quick space management.</li>
-<li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
-<li><a href="https://github.com/chmln/sd"><code>sd</code></a> is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
-<li><a href="https://github.com/bootandy/dust"><code>dust</code></a> visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
-<li><a href="https://github.com/ducaale/xh"><code>xh</code></a> is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
-<li><a href="https://github.com/muesli/duf"><code>duf</code></a>is a modern disk usage utility for the command-line with an intuitive interface.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/sharkdp/fd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;fd&lt;/code&gt;
+	</span>
+
+</a>
+ is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ogham/exa"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;exa&lt;/code&gt;
+	</span>
+
+</a>
+ is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ogham/dog"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;dog&lt;/code&gt;
+	</span>
+
+</a>
+ is a modern, feature-rich DNS client for the command-line.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/rofl0r/ncdu"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;ncdu&lt;/code&gt;
+	</span>
+
+</a>
+ is a console disk usage analyzer for quick space management.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/sharkdp/bat"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;bat&lt;/code&gt;
+	</span>
+
+</a>
+ is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/chmln/sd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;sd&lt;/code&gt;
+	</span>
+
+</a>
+ is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/bootandy/dust"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;dust&lt;/code&gt;
+	</span>
+
+</a>
+ visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ducaale/xh"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;xh&lt;/code&gt;
+	</span>
+
+</a>
+ is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/muesli/duf"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;duf&lt;/code&gt;
+	</span>
+
+</a>
+is a modern disk usage utility for the command-line with an intuitive interface.</li>
 </ul>
 ]]></content:encoded>
     </item>
@@ -775,7 +2304,24 @@ Key Components of Cloud Engineering Cloud Infrastructure: Design and management 
 <p><strong>Cloud Security:</strong> Protecting cloud-based systems, data, and infrastructure from cybersecurity threats.</p>
 </li>
 <li>
-<p><strong><a href="/posts/what-is-devops">DevOps</a> in the Cloud:</strong> Integrating development and operations teams to improve collaboration and productivity by automating infrastructure, workflows, and continuously measuring application performance.</p>
+<p><strong><a
+
+	
+	
+		href = "/posts/what-is-devops"
+
+		
+
+	
+
+	>
+	
+	<span>
+		DevOps
+	</span>
+
+</a>
+ in the Cloud:</strong> Integrating development and operations teams to improve collaboration and productivity by automating infrastructure, workflows, and continuously measuring application performance.</p>
 </li>
 </ul>
 <h2 id="benefits-of-cloud-engineering">Benefits of Cloud Engineering</h2>

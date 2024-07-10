@@ -107,13 +107,167 @@ A network prefix is a part of an IP address that indicates the network to which 
 <p>Network prefixes are crucial for defining the structure and size of IP networks. The length of the prefix determines the division between the network and host portions of an IP address, impacting the number of available networks and hosts. By using CIDR notation and flexible prefix lengths, network administrators can efficiently allocate IP address space, design scalable networks, and optimize routing performance.</p>
 <h2 id="links">Links:</h2>
 <p>202405171407</p>
-<p><a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a> discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
-<p><a href="https://www.ipaddressguide.com/">IP Address Guide</a> provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
-<p><a href="https://www.networkcomputing.com/">Network Computing</a> offers a variety of articles and tutorials on networking topics.</p>
-<p><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Documentation</a> provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
-<p><a href="https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html">Juniper Networks</a> offers comprehensive technical documentation on IP networking and related topics.</p>
-<p><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a> is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
-<p><a href="https://dl.acm.org/">ACM Digital Library</a> provides access to a vast collection of research articles and papers on computer science, including networking.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1918"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1918
+	</span>
+
+</a>
+ discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
+<p><a
+
+	
+	
+		href = "https://www.ipaddressguide.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IP Address Guide
+	</span>
+
+</a>
+ provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
+<p><a
+
+	
+	
+		href = "https://www.networkcomputing.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Network Computing
+	</span>
+
+</a>
+ offers a variety of articles and tutorials on networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://www.cisco.com/c/en/us/support/index.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Cisco Documentation
+	</span>
+
+</a>
+ provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
+<p><a
+
+	
+	
+		href = "https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Juniper Networks
+	</span>
+
+</a>
+ offers comprehensive technical documentation on IP networking and related topics.</p>
+<p><a
+
+	
+	
+		href = "https://ieeexplore.ieee.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IEEE Xplore
+	</span>
+
+</a>
+ is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://dl.acm.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ACM Digital Library
+	</span>
+
+</a>
+ provides access to a vast collection of research articles and papers on computer science, including networking.</p>
 ]]></content:encoded>
     </item>
     
@@ -188,16 +342,236 @@ A network prefix is a part of an IP address that indicates the network to which 
 <p>By adopting CIDR, the efficiency of IP address allocation and routing is significantly improved, making it a preferred choice for modern networking.</p>
 <h2 id="links">Links:</h2>
 <p>202405171433</p>
-<p><a href="https://www.ipaddressguide.com/">IP Address Guide</a> provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
-<p><a href="https://tools.ietf.org/html/rfc1519">RFC 1519</a> is the original document that specifies CIDR.</p>
-<p><a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a> discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
-<p><a href="https://www.ietf.org/">IETF</a> publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.</p>
-<p><a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Classless Inter-Domain Routing</a></p>
-<p><a href="https://www.networkcomputing.com/">Network Computing</a> offers a variety of articles and tutorials on networking topics.</p>
-<p><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Documentation</a> provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
-<p><a href="https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html">Juniper Networks</a> offers comprehensive technical documentation on IP networking and related topics.</p>
-<p><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a> is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
-<p><a href="https://dl.acm.org/">ACM Digital Library</a> provides access to a vast collection of research articles and papers on computer science, including networking.</p>
+<p><a
+
+	
+	
+		href = "https://www.ipaddressguide.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IP Address Guide
+	</span>
+
+</a>
+ provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1519"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1519
+	</span>
+
+</a>
+ is the original document that specifies CIDR.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1918"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1918
+	</span>
+
+</a>
+ discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
+<p><a
+
+	
+	
+		href = "https://www.ietf.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IETF
+	</span>
+
+</a>
+ publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.</p>
+<p><a
+
+	
+	
+		href = "https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Classless Inter-Domain Routing
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.networkcomputing.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Network Computing
+	</span>
+
+</a>
+ offers a variety of articles and tutorials on networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://www.cisco.com/c/en/us/support/index.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Cisco Documentation
+	</span>
+
+</a>
+ provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
+<p><a
+
+	
+	
+		href = "https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Juniper Networks
+	</span>
+
+</a>
+ offers comprehensive technical documentation on IP networking and related topics.</p>
+<p><a
+
+	
+	
+		href = "https://ieeexplore.ieee.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IEEE Xplore
+	</span>
+
+</a>
+ is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://dl.acm.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ACM Digital Library
+	</span>
+
+</a>
+ provides access to a vast collection of research articles and papers on computer science, including networking.</p>
 <h3 id="books">Books</h3>
 <ol>
 <li>

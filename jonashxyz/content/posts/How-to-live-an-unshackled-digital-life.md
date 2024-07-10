@@ -9,7 +9,6 @@ tags:
   - Article
 ---
 
-## Unshackle Your Digital Life
 1. Get a Google Pixel phone, so you can install [GrapheneOS](https://grapheneos.org/). I recommend Google Pixel 6a. Very cheap and very good.
    - Get rid of all the apps you don't need 
 2. Sync your data with [SyncThing](https://syncthing.net/)

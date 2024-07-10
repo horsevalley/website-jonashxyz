@@ -49,7 +49,29 @@ Fast and Efficient: HUGO takes your content, which you can write in Markdown (a 
 </ul>
 <h2 id="step-3-add-a-theme">Step 3: Add a Theme</h2>
 <ul>
-<li>Find a theme you like from <a href="https://themes.gohugo.io/">HUGO Themes</a>.</li>
+<li>Find a theme you like from <a
+
+	
+	
+		href = "https://themes.gohugo.io/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		HUGO Themes
+	</span>
+
+</a>
+.</li>
 <li>Clone the theme into your project: e.g.</li>
 </ul>
 <pre tabindex="0"><code>git clone https://github.com/reorx/hugo-PaperModX themes/PaperModX --depth=1
@@ -74,7 +96,29 @@ draft : false
 <li>Create a new post: <code>hugo new posts/my-first-post.md</code></li>
 <li>Open the file in a text editor, and you&rsquo;ll see some front matter at the top. Below this, add your content
 <ul>
-<li>It&rsquo;s important that you write your content in <a href="https://www.markdownguide.org/basic-syntax/">markdown</a> format</li>
+<li>It&rsquo;s important that you write your content in <a
+
+	
+	
+		href = "https://www.markdownguide.org/basic-syntax/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		markdown
+	</span>
+
+</a>
+ format</li>
 </ul>
 </li>
 </ul>
@@ -91,11 +135,77 @@ draft : false
 </ul>
 <pre tabindex="0"><code>  update_website=&#34;rsync -vrP --delete-after /home/jonash/dotfiles/website/website/jonashxyz/public/ root@jonash.xyz:/var/www/jonashxyz/&#34; \
 </code></pre><ul>
-<li>I got the alias from <a href="https://lukesmith.xyz/">Luke Smith</a></li>
+<li>I got the alias from <a
+
+	
+	
+		href = "https://lukesmith.xyz/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Luke Smith
+	</span>
+
+</a>
+</li>
 </ul>
 <h2 id="done">Done</h2>
-<p>Congratulations! You&rsquo;ve just created a website with HUGO. For more detailed instructions, visit the <a href="https://gohugo.io/documentation/">official HUGO documentation</a>.</p>
-<p>Also, read the documentation of your chosen theme, e.g. <a href="https://reorx.github.io/hugo-PaperModX/">PaperModX</a>.</p>
+<p>Congratulations! You&rsquo;ve just created a website with HUGO. For more detailed instructions, visit the <a
+
+	
+	
+		href = "https://gohugo.io/documentation/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		official HUGO documentation
+	</span>
+
+</a>
+.</p>
+<p>Also, read the documentation of your chosen theme, e.g. <a
+
+	
+	
+		href = "https://reorx.github.io/hugo-PaperModX/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		PaperModX
+	</span>
+
+</a>
+.</p>
 <p>Enjoy!</p>
 <p>Links:</p>
 <p>202403081313</p>

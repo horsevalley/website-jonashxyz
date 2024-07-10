@@ -13,20 +13,218 @@
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/yazi---a-blazing-fast-terminal-file-manager/</guid>
-      <description>I&amp;rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it! It&amp;rsquo;s written in Rust, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources. And the best part; it has vim keybindings!
-Not convinced yet? Check out the GitHub page, and scroll down a bit until you reach &amp;ldquo;example.mp4&amp;rdquo;. You&amp;rsquo;ll see a video that demonstrates some of its cool features.</description>
+      <description>I&amp;rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it! It&amp;rsquo;s written in Rust , so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources. And the best part; it has vim keybindings!
+Not convinced yet? Check out the GitHub page , and scroll down a bit until you reach &amp;ldquo;example.mp4&amp;rdquo;. You&amp;rsquo;ll see a video that demonstrates some of its cool features.</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it!
-It&rsquo;s written in <a href="https://www.rust-lang.org/">Rust</a>, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources.
+It&rsquo;s written in <a
+
+	
+	
+		href = "https://www.rust-lang.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Rust
+	</span>
+
+</a>
+, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources.
 And the best part; it has vim keybindings!</p>
-<p>Not convinced yet? Check out the <a href="https://github.com/sxyazi/yazi">GitHub page</a>, and scroll down a bit until you reach &ldquo;example.mp4&rdquo;. You&rsquo;ll see a video that demonstrates some of its cool features.</p>
-<p>You can check out other nice features <a href="https://yazi-rs.github.io/features/">here</a>, like scrollable preview, bulk rename and integration with tools like <a href="https://github.com/sharkdp/fd">fd</a>, <a href="https://github.com/BurntSushi/ripgrep">rg</a>, <a href="https://github.com/jstkdng/ueberzugpp">ueberzugpp</a> and more.</p>
+<p>Not convinced yet? Check out the <a
+
+	
+	
+		href = "https://github.com/sxyazi/yazi"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		GitHub page
+	</span>
+
+</a>
+, and scroll down a bit until you reach &ldquo;example.mp4&rdquo;. You&rsquo;ll see a video that demonstrates some of its cool features.</p>
+<p>You can check out other nice features <a
+
+	
+	
+		href = "https://yazi-rs.github.io/features/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		here
+	</span>
+
+</a>
+, like scrollable preview, bulk rename and integration with tools like <a
+
+	
+	
+		href = "https://github.com/sharkdp/fd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		fd
+	</span>
+
+</a>
+, <a
+
+	
+	
+		href = "https://github.com/BurntSushi/ripgrep"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		rg
+	</span>
+
+</a>
+, <a
+
+	
+	
+		href = "https://github.com/jstkdng/ueberzugpp"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ueberzugpp
+	</span>
+
+</a>
+ and more.</p>
 <h2 id="installation-and-quick-start">Installation and quick start</h2>
-<p><a href="https://yazi-rs.github.io/docs/installation/">https://yazi-rs.github.io/docs/installation/</a></p>
+<p><a
+
+	
+	
+		href = "https://yazi-rs.github.io/docs/installation/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://yazi-rs.github.io/docs/installation/
+	</span>
+
+</a>
+</p>
 <p>Good luck!</p>
 <h2 id="links">Links:</h2>
 <p>202405211803</p>
-<p><a href="https://github.com/sxyazi/yazi">https://github.com/sxyazi/yazi</a></p>
-<p><a href="https://yazi-rs.github.io/">https://yazi-rs.github.io/</a></p>
+<p><a
+
+	
+	
+		href = "https://github.com/sxyazi/yazi"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://github.com/sxyazi/yazi
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://yazi-rs.github.io/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://yazi-rs.github.io/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     

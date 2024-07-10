@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>LukeSmith on Jonas Hestdahl</title>
+    <link>https://jonash.xyz/tags/lukesmith/</link>
+    <description>Recent content in LukeSmith on Jonas Hestdahl</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 10 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/lukesmith/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avoid using cat into grep</title>
+      <link>https://jonash.xyz/posts/avoid-using-cat-into-grep/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/posts/avoid-using-cat-into-grep/</guid>
+      <description>Let me open by saying that I am guilty of doing this myself.
+Instead of doing cat file1 file2 | grep -i searchTerm, it is better to use grep directly. The result is not only more efficient, but it&amp;rsquo;s more informative aswell.
+Here is why I came across a video by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of cat , and what it&amp;rsquo;s really meant for, which is concatenate and write files.</description>
+      <content:encoded><![CDATA[<p>Let me open by saying that I am guilty of doing this myself.</p>
+<p>Instead of doing <code>cat file1 file2 | grep -i searchTerm</code>, it is better to use <a
+
+	
+	
+		href = "https://www.gnu.org/software/grep/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		grep
+	</span>
+
+</a>
+ directly. The result is not only more efficient, but it&rsquo;s more informative aswell.</p>
+<h2 id="here-is-why">Here is why</h2>
+<p>I came across a <a
+
+	
+	
+		href = "https://www.youtube.com/watch?v=82NBMvx6vFY"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		video
+	</span>
+
+</a>
+ by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of <a
+
+	
+	
+		href = "https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		cat
+	</span>
+
+</a>
+, and what it&rsquo;s really meant for, which is concatenate and write files.</p>
+<p>Look at the following output of running <code>cat file1 file2 | grep -i fox</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat file1 file2 <span class="p">|</span> grep -i fox
+</span></span><span class="line"><span class="cl">The quick brown fox jumps over the lazy dog.
+</span></span><span class="line"><span class="cl">foxes are beautiful animals
+</span></span></code></pre></div><p>Now take a look at the output, using only grep. Do you notice a difference?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep -i fox file1 file2
+</span></span><span class="line"><span class="cl">file1:The quick brown fox jumps over the lazy dog.
+</span></span><span class="line"><span class="cl">file2:foxes are beautiful animals
+</span></span></code></pre></div><p>Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.</p>
+<p>Changing a bad habit that is engrained in your mind can be a real struggle, but I will do my best to adopt this new way of searching.</p>
+<h2 id="links-">Links :</h2>
+<p>202407101228</p>
+<p><a
+
+	
+	
+		href = "https://www.youtube.com/watch?v=82NBMvx6vFY"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.youtube.com/watch?v=82NBMvx6vFY
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/grep/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/grep/
+	</span>
+
+</a>
+</p>
+]]></content:encoded>
+    </item>
+    
+  </channel>
+</rss>

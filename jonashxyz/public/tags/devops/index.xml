@@ -107,13 +107,167 @@ A network prefix is a part of an IP address that indicates the network to which 
 <p>Network prefixes are crucial for defining the structure and size of IP networks. The length of the prefix determines the division between the network and host portions of an IP address, impacting the number of available networks and hosts. By using CIDR notation and flexible prefix lengths, network administrators can efficiently allocate IP address space, design scalable networks, and optimize routing performance.</p>
 <h2 id="links">Links:</h2>
 <p>202405171407</p>
-<p><a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a> discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
-<p><a href="https://www.ipaddressguide.com/">IP Address Guide</a> provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
-<p><a href="https://www.networkcomputing.com/">Network Computing</a> offers a variety of articles and tutorials on networking topics.</p>
-<p><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Documentation</a> provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
-<p><a href="https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html">Juniper Networks</a> offers comprehensive technical documentation on IP networking and related topics.</p>
-<p><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a> is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
-<p><a href="https://dl.acm.org/">ACM Digital Library</a> provides access to a vast collection of research articles and papers on computer science, including networking.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1918"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1918
+	</span>
+
+</a>
+ discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
+<p><a
+
+	
+	
+		href = "https://www.ipaddressguide.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IP Address Guide
+	</span>
+
+</a>
+ provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
+<p><a
+
+	
+	
+		href = "https://www.networkcomputing.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Network Computing
+	</span>
+
+</a>
+ offers a variety of articles and tutorials on networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://www.cisco.com/c/en/us/support/index.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Cisco Documentation
+	</span>
+
+</a>
+ provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
+<p><a
+
+	
+	
+		href = "https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Juniper Networks
+	</span>
+
+</a>
+ offers comprehensive technical documentation on IP networking and related topics.</p>
+<p><a
+
+	
+	
+		href = "https://ieeexplore.ieee.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IEEE Xplore
+	</span>
+
+</a>
+ is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://dl.acm.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ACM Digital Library
+	</span>
+
+</a>
+ provides access to a vast collection of research articles and papers on computer science, including networking.</p>
 ]]></content:encoded>
     </item>
     
@@ -188,16 +342,236 @@ A network prefix is a part of an IP address that indicates the network to which 
 <p>By adopting CIDR, the efficiency of IP address allocation and routing is significantly improved, making it a preferred choice for modern networking.</p>
 <h2 id="links">Links:</h2>
 <p>202405171433</p>
-<p><a href="https://www.ipaddressguide.com/">IP Address Guide</a> provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
-<p><a href="https://tools.ietf.org/html/rfc1519">RFC 1519</a> is the original document that specifies CIDR.</p>
-<p><a href="https://tools.ietf.org/html/rfc1918">RFC 1918</a> discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
-<p><a href="https://www.ietf.org/">IETF</a> publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.</p>
-<p><a href="https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing">Classless Inter-Domain Routing</a></p>
-<p><a href="https://www.networkcomputing.com/">Network Computing</a> offers a variety of articles and tutorials on networking topics.</p>
-<p><a href="https://www.cisco.com/c/en/us/support/index.html">Cisco Documentation</a> provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
-<p><a href="https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html">Juniper Networks</a> offers comprehensive technical documentation on IP networking and related topics.</p>
-<p><a href="https://ieeexplore.ieee.org/">IEEE Xplore</a> is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
-<p><a href="https://dl.acm.org/">ACM Digital Library</a> provides access to a vast collection of research articles and papers on computer science, including networking.</p>
+<p><a
+
+	
+	
+		href = "https://www.ipaddressguide.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IP Address Guide
+	</span>
+
+</a>
+ provides detailed explanations and tools for understanding and calculating IP addresses and subnets.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1519"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1519
+	</span>
+
+</a>
+ is the original document that specifies CIDR.</p>
+<p><a
+
+	
+	
+		href = "https://tools.ietf.org/html/rfc1918"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		RFC 1918
+	</span>
+
+</a>
+ discusses private IP address allocation, which is crucial for understanding network prefixes in private networks.</p>
+<p><a
+
+	
+	
+		href = "https://www.ietf.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IETF
+	</span>
+
+</a>
+ publishes a wide range of RFCs and documents related to internet standards, including those on IP networking and CIDR.</p>
+<p><a
+
+	
+	
+		href = "https://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Classless Inter-Domain Routing
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.networkcomputing.com/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Network Computing
+	</span>
+
+</a>
+ offers a variety of articles and tutorials on networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://www.cisco.com/c/en/us/support/index.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Cisco Documentation
+	</span>
+
+</a>
+ provides detailed technical guides and white papers on various networking topics, including IP addressing and subnetting.</p>
+<p><a
+
+	
+	
+		href = "https://www.juniper.net/documentation/en_US/release-independent/nce/information-products/pathway-pages/ip-addresses/subnetting.html"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Juniper Networks
+	</span>
+
+</a>
+ offers comprehensive technical documentation on IP networking and related topics.</p>
+<p><a
+
+	
+	
+		href = "https://ieeexplore.ieee.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		IEEE Xplore
+	</span>
+
+</a>
+ is a digital library for research papers and articles on electrical engineering and computer science, including networking topics.</p>
+<p><a
+
+	
+	
+		href = "https://dl.acm.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ACM Digital Library
+	</span>
+
+</a>
+ provides access to a vast collection of research articles and papers on computer science, including networking.</p>
 <h3 id="books">Books</h3>
 <ol>
 <li>
@@ -229,19 +603,107 @@ A network prefix is a part of an IP address that indicates the network to which 
       
       <guid>https://jonash.xyz/posts/helm---the-package-manager-for-kubernetes/</guid>
       <description>#Kubernetes #Helm #DevOps
-Helm Helm is the best way to find, share, and use software built for Kubernetes. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
-Helm is a graduated project in the CNCF and is maintained by the Helm community.
+Helm Helm is the best way to find, share, and use software built for Kubernetes . It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
+Helm is a graduated project in the CNCF and is maintained by the Helm community .
 What is a helm chart? a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</description>
       <content:encoded><![CDATA[<p>#Kubernetes #Helm #DevOps</p>
 <h2 id="helm">Helm</h2>
-<p>Helm is the best way to find, share, and use software built for <a href="https://kubernetes.io">Kubernetes</a>. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
-<p>Helm is a graduated project in the <a href="https://cncf.io">CNCF</a> and is maintained by the <a href="https://github.com/helm/community">Helm community</a>.</p>
+<p>Helm is the best way to find, share, and use software built for <a
+
+	
+	
+		href = "https://kubernetes.io"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Kubernetes
+	</span>
+
+</a>
+. It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.</p>
+<p>Helm is a graduated project in the <a
+
+	
+	
+		href = "https://cncf.io"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		CNCF
+	</span>
+
+</a>
+ and is maintained by the <a
+
+	
+	
+		href = "https://github.com/helm/community"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Helm community
+	</span>
+
+</a>
+.</p>
 <h2 id="what-is-a-helm-chart">What is a helm chart?</h2>
 <p>a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</p>
 <p>In other words, a Helm chart is a package that contains all the necessary information and resources to deploy an application or service onto a Kubernetes cluster. It includes a collection of files that describe a related set of Kubernetes resources.</p>
 <p>Charts are easy to create, version, share, and publish — so start using Helm and stop the copy-and-paste.</p>
 <h2 id="how-to-install-helm">How to install helm</h2>
-<p><a href="https://helm.sh/docs/intro/install/">https://helm.sh/docs/intro/install/</a></p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/docs/intro/install/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/docs/intro/install/
+	</span>
+
+</a>
+</p>
 <h3 id="example-structure-of-a-helm-chart">Example Structure of a Helm Chart</h3>
 <pre tabindex="0"><code>mychart/
   Chart.yaml        # Chart metadata
@@ -261,7 +723,29 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 <p><strong>Values.yaml</strong>: This file defines the default configuration values for the chart. Users can override these values when they install or upgrade a chart to customize the deployment.</p>
 </li>
 <li>
-<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a href="https://go.dev/">Go</a> templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
+<p><strong>Templates</strong>: This directory contains a set of templates that generate Kubernetes manifest files. The templates use <a
+
+	
+	
+		href = "https://go.dev/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Go
+	</span>
+
+</a>
+ templating syntax and can include variables that are defined in <code>Values.yaml</code> or provided by the user at installation time.</p>
 </li>
 <li>
 <p><strong>Charts</strong>: This directory (optional) can contain dependencies, which are other charts that this chart depends on.</p>
@@ -415,12 +899,78 @@ What is a helm chart? a Helm chart is a powerful tool that simplifies the deploy
 </li>
 </ol>
 <p>These commands cover the most common tasks you&rsquo;ll perform with Helm, from managing repositories and searching for charts to installing, upgrading, and maintaining releases.
-Check out the <a href="https://helm.sh/docs/">official documentation page</a> to learn more about Helm.</p>
+Check out the <a
+
+	
+	
+		href = "https://helm.sh/docs/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		official documentation page
+	</span>
+
+</a>
+ to learn more about Helm.</p>
 <p>Good luck!</p>
 <h2 id="links-">Links :</h2>
 <p>202405161033</p>
-<p><a href="https://helm.sh/">https://helm.sh/</a></p>
-<p><a href="https://helm.sh/docs/">https://helm.sh/docs/</a></p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://helm.sh/docs/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://helm.sh/docs/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -461,7 +1011,29 @@ What are Pods? A pod is the smallest deployable unit in Kubernetes and serves as
 <p>This relationship enables Kubernetes to manage large-scale, distributed environments efficiently, ensuring that applications are reliably available and can be scaled as needed across the various nodes in the cluster.</p>
 <h2 id="links">Links:</h2>
 <p>202405142258</p>
-<p>Kubernetes documentation home: <a href="https://kubernetes.io/docs/home/">https://kubernetes.io/docs/home/</a></p>
+<p>Kubernetes documentation home: <a
+
+	
+	
+		href = "https://kubernetes.io/docs/home/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://kubernetes.io/docs/home/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -471,18 +1043,216 @@ What are Pods? A pod is the smallest deployable unit in Kubernetes and serves as
       <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
-      <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
+      <description>These modern Linux tools might enhance your workflow &amp;lt;code&amp;gt;fd&amp;lt;/code&amp;gt; is a simple and fast file search tool, enhancing the Unix find command. &amp;lt;code&amp;gt;exa&amp;lt;/code&amp;gt; is a modern replacement for ls, enhancing file listing with better defaults. &amp;lt;code&amp;gt;dog&amp;lt;/code&amp;gt; is a modern, feature-rich DNS client for the command-line. &amp;lt;code&amp;gt;ncdu&amp;lt;/code&amp;gt; is a console disk usage analyzer for quick space management. &amp;lt;code&amp;gt;bat&amp;lt;/code&amp;gt; is a cat clone with syntax highlighting and Git integration for the command-line. &amp;lt;code&amp;gt;sd&amp;lt;/code&amp;gt; is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
       <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
 <ul>
-<li><a href="https://github.com/sharkdp/fd"><code>fd</code></a> is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
-<li><a href="https://github.com/ogham/exa"><code>exa</code></a> is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
-<li><a href="https://github.com/ogham/dog"><code>dog</code></a> is a modern, feature-rich DNS client for the command-line.</li>
-<li><a href="https://github.com/rofl0r/ncdu"><code>ncdu</code></a> is a console disk usage analyzer for quick space management.</li>
-<li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
-<li><a href="https://github.com/chmln/sd"><code>sd</code></a> is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
-<li><a href="https://github.com/bootandy/dust"><code>dust</code></a> visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
-<li><a href="https://github.com/ducaale/xh"><code>xh</code></a> is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
-<li><a href="https://github.com/muesli/duf"><code>duf</code></a>is a modern disk usage utility for the command-line with an intuitive interface.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/sharkdp/fd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;fd&lt;/code&gt;
+	</span>
+
+</a>
+ is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ogham/exa"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;exa&lt;/code&gt;
+	</span>
+
+</a>
+ is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ogham/dog"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;dog&lt;/code&gt;
+	</span>
+
+</a>
+ is a modern, feature-rich DNS client for the command-line.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/rofl0r/ncdu"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;ncdu&lt;/code&gt;
+	</span>
+
+</a>
+ is a console disk usage analyzer for quick space management.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/sharkdp/bat"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;bat&lt;/code&gt;
+	</span>
+
+</a>
+ is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/chmln/sd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;sd&lt;/code&gt;
+	</span>
+
+</a>
+ is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/bootandy/dust"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;dust&lt;/code&gt;
+	</span>
+
+</a>
+ visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ducaale/xh"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;xh&lt;/code&gt;
+	</span>
+
+</a>
+ is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/muesli/duf"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;duf&lt;/code&gt;
+	</span>
+
+</a>
+is a modern disk usage utility for the command-line with an intuitive interface.</li>
 </ul>
 ]]></content:encoded>
     </item>

@@ -29,7 +29,24 @@ Key Components of Cloud Engineering Cloud Infrastructure: Design and management 
 <p><strong>Cloud Security:</strong> Protecting cloud-based systems, data, and infrastructure from cybersecurity threats.</p>
 </li>
 <li>
-<p><strong><a href="/posts/what-is-devops">DevOps</a> in the Cloud:</strong> Integrating development and operations teams to improve collaboration and productivity by automating infrastructure, workflows, and continuously measuring application performance.</p>
+<p><strong><a
+
+	
+	
+		href = "/posts/what-is-devops"
+
+		
+
+	
+
+	>
+	
+	<span>
+		DevOps
+	</span>
+
+</a>
+ in the Cloud:</strong> Integrating development and operations teams to improve collaboration and productivity by automating infrastructure, workflows, and continuously measuring application performance.</p>
 </li>
 </ul>
 <h2 id="benefits-of-cloud-engineering">Benefits of Cloud Engineering</h2>

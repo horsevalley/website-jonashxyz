@@ -11,7 +11,7 @@ draft : false
 GRUB is a boot loader, which lets you boot up your system. The abbreviation stands for GNU GRand Unified Bootloader, and is a boot loader package from the GNU Project. GRUB is the primary bootloader for many Linux distributions, allowing users to choose from multiple operating systems or different versions of the same operating system at boot time. It's designed to be highly configurable and supports a wide range of operating systems, not just Linux.
 
 ## Why make this guide?
-The reason I made this simple guide is so you know what to do when you get to [Arch Linux installation guide, chapter 3.8](https://wiki.archlinux.org/title/Installation_guide).
+The reason I made this simple guide is to help myself remember how to set up grub bootloader in [Arch Linux installation guide, chapter 3.8](https://wiki.archlinux.org/title/Installation_guide#Boot_loader).
 
 ## GRUB features include:
 - The ability to boot multiple operating systems, including Linux, Windows, and macOS.
@@ -51,3 +51,9 @@ grub-mkconfig -o /boot/grub/grub.cfg
 - Optionally manually unmount all the partitions with `umount -R /mnt`: this allows noticing any "busy" partitions, and finding the cause
 - Finally, restart the machine by typing `reboot`: any partitions still mounted will be automatically unmounted by *systemd*.
 - Remember to remove the installation medium and then login into the new system with the root account
+
+## Links:
+
+https://www.gnu.org/software/grub/
+
+https://wiki.archlinux.org/title/Installation_guide#Boot_loader

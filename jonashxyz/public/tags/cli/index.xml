@@ -6,27 +6,388 @@
     <description>Recent content in CLI on Jonas Hestdahl</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 21 May 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://jonash.xyz/tags/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Avoid using cat into grep</title>
+      <link>https://jonash.xyz/posts/avoid-using-cat-into-grep/</link>
+      <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
+      
+      <guid>https://jonash.xyz/posts/avoid-using-cat-into-grep/</guid>
+      <description>Let me open by saying that I am guilty of doing this myself.
+Instead of doing cat file1 file2 | grep -i searchTerm, it is better to use grep directly. The result is not only more efficient, but it&amp;rsquo;s more informative aswell.
+Here is why I came across a video by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of cat , and what it&amp;rsquo;s really meant for, which is concatenate and write files.</description>
+      <content:encoded><![CDATA[<p>Let me open by saying that I am guilty of doing this myself.</p>
+<p>Instead of doing <code>cat file1 file2 | grep -i searchTerm</code>, it is better to use <a
+
+	
+	
+		href = "https://www.gnu.org/software/grep/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		grep
+	</span>
+
+</a>
+ directly. The result is not only more efficient, but it&rsquo;s more informative aswell.</p>
+<h2 id="here-is-why">Here is why</h2>
+<p>I came across a <a
+
+	
+	
+		href = "https://www.youtube.com/watch?v=82NBMvx6vFY"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		video
+	</span>
+
+</a>
+ by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of <a
+
+	
+	
+		href = "https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		cat
+	</span>
+
+</a>
+, and what it&rsquo;s really meant for, which is concatenate and write files.</p>
+<p>Look at the following output of running <code>cat file1 file2 | grep -i fox</code>:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">cat file1 file2 <span class="p">|</span> grep -i fox
+</span></span><span class="line"><span class="cl">The quick brown fox jumps over the lazy dog.
+</span></span><span class="line"><span class="cl">foxes are beautiful animals
+</span></span></code></pre></div><p>Now take a look at the output, using only grep. Do you notice a difference?</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grep -i fox file1 file2
+</span></span><span class="line"><span class="cl">file1:The quick brown fox jumps over the lazy dog.
+</span></span><span class="line"><span class="cl">file2:foxes are beautiful animals
+</span></span></code></pre></div><p>Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.</p>
+<p>Changing a bad habit that is engrained in your mind can be a real struggle, but I will do my best to adopt this new way of searching.</p>
+<h2 id="links-">Links :</h2>
+<p>202407101228</p>
+<p><a
+
+	
+	
+		href = "https://www.youtube.com/watch?v=82NBMvx6vFY"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.youtube.com/watch?v=82NBMvx6vFY
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/coreutils/manual/html_node/cat-invocation.html#cat-invocation
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://www.gnu.org/software/grep/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://www.gnu.org/software/grep/
+	</span>
+
+</a>
+</p>
+]]></content:encoded>
+    </item>
+    
     <item>
       <title>Yazi - a Blazing Fast Terminal File Manager written in Rust</title>
       <link>https://jonash.xyz/posts/yazi---a-blazing-fast-terminal-file-manager/</link>
       <pubDate>Tue, 21 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/yazi---a-blazing-fast-terminal-file-manager/</guid>
-      <description>I&amp;rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it! It&amp;rsquo;s written in Rust, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources. And the best part; it has vim keybindings!
-Not convinced yet? Check out the GitHub page, and scroll down a bit until you reach &amp;ldquo;example.mp4&amp;rdquo;. You&amp;rsquo;ll see a video that demonstrates some of its cool features.</description>
+      <description>I&amp;rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it! It&amp;rsquo;s written in Rust , so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources. And the best part; it has vim keybindings!
+Not convinced yet? Check out the GitHub page , and scroll down a bit until you reach &amp;ldquo;example.mp4&amp;rdquo;. You&amp;rsquo;ll see a video that demonstrates some of its cool features.</description>
       <content:encoded><![CDATA[<p>I&rsquo;ve been using this terminal file manager for a few weeks now, and I must say; I absolutely love it!
-It&rsquo;s written in <a href="https://www.rust-lang.org/">Rust</a>, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources.
+It&rsquo;s written in <a
+
+	
+	
+		href = "https://www.rust-lang.org/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		Rust
+	</span>
+
+</a>
+, so all I/O operations are asynchronous, which means CPU tasks are spread across multiple threads, utilizing available resources.
 And the best part; it has vim keybindings!</p>
-<p>Not convinced yet? Check out the <a href="https://github.com/sxyazi/yazi">GitHub page</a>, and scroll down a bit until you reach &ldquo;example.mp4&rdquo;. You&rsquo;ll see a video that demonstrates some of its cool features.</p>
-<p>You can check out other nice features <a href="https://yazi-rs.github.io/features/">here</a>, like scrollable preview, bulk rename and integration with tools like <a href="https://github.com/sharkdp/fd">fd</a>, <a href="https://github.com/BurntSushi/ripgrep">rg</a>, <a href="https://github.com/jstkdng/ueberzugpp">ueberzugpp</a> and more.</p>
+<p>Not convinced yet? Check out the <a
+
+	
+	
+		href = "https://github.com/sxyazi/yazi"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		GitHub page
+	</span>
+
+</a>
+, and scroll down a bit until you reach &ldquo;example.mp4&rdquo;. You&rsquo;ll see a video that demonstrates some of its cool features.</p>
+<p>You can check out other nice features <a
+
+	
+	
+		href = "https://yazi-rs.github.io/features/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		here
+	</span>
+
+</a>
+, like scrollable preview, bulk rename and integration with tools like <a
+
+	
+	
+		href = "https://github.com/sharkdp/fd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		fd
+	</span>
+
+</a>
+, <a
+
+	
+	
+		href = "https://github.com/BurntSushi/ripgrep"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		rg
+	</span>
+
+</a>
+, <a
+
+	
+	
+		href = "https://github.com/jstkdng/ueberzugpp"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		ueberzugpp
+	</span>
+
+</a>
+ and more.</p>
 <h2 id="installation-and-quick-start">Installation and quick start</h2>
-<p><a href="https://yazi-rs.github.io/docs/installation/">https://yazi-rs.github.io/docs/installation/</a></p>
+<p><a
+
+	
+	
+		href = "https://yazi-rs.github.io/docs/installation/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://yazi-rs.github.io/docs/installation/
+	</span>
+
+</a>
+</p>
 <p>Good luck!</p>
 <h2 id="links">Links:</h2>
 <p>202405211803</p>
-<p><a href="https://github.com/sxyazi/yazi">https://github.com/sxyazi/yazi</a></p>
-<p><a href="https://yazi-rs.github.io/">https://yazi-rs.github.io/</a></p>
+<p><a
+
+	
+	
+		href = "https://github.com/sxyazi/yazi"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://github.com/sxyazi/yazi
+	</span>
+
+</a>
+</p>
+<p><a
+
+	
+	
+		href = "https://yazi-rs.github.io/"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		https://yazi-rs.github.io/
+	</span>
+
+</a>
+</p>
 ]]></content:encoded>
     </item>
     
@@ -56,18 +417,216 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
       <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
-      <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
+      <description>These modern Linux tools might enhance your workflow &amp;lt;code&amp;gt;fd&amp;lt;/code&amp;gt; is a simple and fast file search tool, enhancing the Unix find command. &amp;lt;code&amp;gt;exa&amp;lt;/code&amp;gt; is a modern replacement for ls, enhancing file listing with better defaults. &amp;lt;code&amp;gt;dog&amp;lt;/code&amp;gt; is a modern, feature-rich DNS client for the command-line. &amp;lt;code&amp;gt;ncdu&amp;lt;/code&amp;gt; is a console disk usage analyzer for quick space management. &amp;lt;code&amp;gt;bat&amp;lt;/code&amp;gt; is a cat clone with syntax highlighting and Git integration for the command-line. &amp;lt;code&amp;gt;sd&amp;lt;/code&amp;gt; is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
       <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
 <ul>
-<li><a href="https://github.com/sharkdp/fd"><code>fd</code></a> is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
-<li><a href="https://github.com/ogham/exa"><code>exa</code></a> is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
-<li><a href="https://github.com/ogham/dog"><code>dog</code></a> is a modern, feature-rich DNS client for the command-line.</li>
-<li><a href="https://github.com/rofl0r/ncdu"><code>ncdu</code></a> is a console disk usage analyzer for quick space management.</li>
-<li><a href="https://github.com/sharkdp/bat"><code>bat</code></a> is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
-<li><a href="https://github.com/chmln/sd"><code>sd</code></a> is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
-<li><a href="https://github.com/bootandy/dust"><code>dust</code></a> visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
-<li><a href="https://github.com/ducaale/xh"><code>xh</code></a> is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
-<li><a href="https://github.com/muesli/duf"><code>duf</code></a>is a modern disk usage utility for the command-line with an intuitive interface.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/sharkdp/fd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;fd&lt;/code&gt;
+	</span>
+
+</a>
+ is a simple and fast file search tool, enhancing the Unix <code>find</code> command.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ogham/exa"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;exa&lt;/code&gt;
+	</span>
+
+</a>
+ is a modern replacement for <code>ls</code>, enhancing file listing with better defaults.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ogham/dog"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;dog&lt;/code&gt;
+	</span>
+
+</a>
+ is a modern, feature-rich DNS client for the command-line.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/rofl0r/ncdu"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;ncdu&lt;/code&gt;
+	</span>
+
+</a>
+ is a console disk usage analyzer for quick space management.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/sharkdp/bat"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;bat&lt;/code&gt;
+	</span>
+
+</a>
+ is a <code>cat</code> clone with syntax highlighting and Git integration for the command-line.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/chmln/sd"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;sd&lt;/code&gt;
+	</span>
+
+</a>
+ is a simple and intuitive find-and-replace CLI tool, aiming to improve upon <code>sed</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/bootandy/dust"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;dust&lt;/code&gt;
+	</span>
+
+</a>
+ visualizes disk usage with an emphasis on clarity, acting as a more intuitive <code>du</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/ducaale/xh"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;xh&lt;/code&gt;
+	</span>
+
+</a>
+ is a friendly and fast HTTP client for the terminal, inspired by <code>curl</code> and <code>HTTPie</code>.</li>
+<li><a
+
+	
+	
+		href = "https://github.com/muesli/duf"
+
+		
+
+	
+
+	
+
+		target = "_blank"
+		rel = "nofollow noopener noreferrer"
+
+		>
+	
+	<span>
+		&lt;code&gt;duf&lt;/code&gt;
+	</span>
+
+</a>
+is a modern disk usage utility for the command-line with an intuitive interface.</li>
 </ul>
 ]]></content:encoded>
     </item>
