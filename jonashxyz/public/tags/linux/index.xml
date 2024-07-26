@@ -424,6 +424,15 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
       <description>First of all, what is GRUB? GRUB is a boot loader, which lets you boot up your system. The abbreviation stands for GNU GRand Unified Bootloader, and is a boot loader package from the GNU Project. GRUB is the primary bootloader for many Linux distributions, allowing users to choose from multiple operating systems or different versions of the same operating system at boot time. It&amp;rsquo;s designed to be highly configurable and supports a wide range of operating systems, not just Linux.</description>
       <content:encoded><![CDATA[<h2 id="first-of-all-what-is-grub">First of all, what is GRUB?</h2>
 <p>GRUB is a boot loader, which lets you boot up your system. The abbreviation stands for GNU GRand Unified Bootloader, and is a boot loader package from the GNU Project. GRUB is the primary bootloader for many Linux distributions, allowing users to choose from multiple operating systems or different versions of the same operating system at boot time. It&rsquo;s designed to be highly configurable and supports a wide range of operating systems, not just Linux.</p>
+<h2 id="grub-features-include">GRUB features include:</h2>
+<ul>
+<li>The ability to boot multiple operating systems, including Linux, Windows, and macOS.</li>
+<li>Support for reading data from various file systems, allowing it to load boot files from these file systems directly.</li>
+<li>A flexible and powerful command-line interface that can be used to troubleshoot boot issues.</li>
+<li>The capability to load operating systems from a network, which is particularly useful in managed IT environments.</li>
+<li>A customizable menu interface that can display graphics and themes, allowing for a visually appealing boot menu.</li>
+</ul>
+<p>GRUB has evolved over time, with GRUB 2 being the successor to the original GRUB (referred to as GRUB Legacy). GRUB 2 offers improved modularity, portability, and features compared to its predecessor.</p>
 <h2 id="why-make-this-guide">Why make this guide?</h2>
 <p>The reason I made this simple guide is to help myself remember how to set up grub bootloader in <a
 
@@ -448,15 +457,6 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 
 </a>
 .</p>
-<h2 id="grub-features-include">GRUB features include:</h2>
-<ul>
-<li>The ability to boot multiple operating systems, including Linux, Windows, and macOS.</li>
-<li>Support for reading data from various file systems, allowing it to load boot files from these file systems directly.</li>
-<li>A flexible and powerful command-line interface that can be used to troubleshoot boot issues.</li>
-<li>The capability to load operating systems from a network, which is particularly useful in managed IT environments.</li>
-<li>A customizable menu interface that can display graphics and themes, allowing for a visually appealing boot menu.</li>
-</ul>
-<p>GRUB has evolved over time, with GRUB 2 being the successor to the original GRUB (referred to as GRUB Legacy). GRUB 2 offers improved modularity, portability, and features compared to its predecessor.</p>
 <h2 id="installing-grub-efi-in-arch-linux">Installing GRUB EFI in Arch Linux</h2>
 <p>First off, we install some packages:</p>
 <pre tabindex="0"><code>sudo pacman -S vim networkmanager grub efibootmgr dosfstools os-prober mtools
