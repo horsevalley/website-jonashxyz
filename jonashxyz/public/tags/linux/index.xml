@@ -13,10 +13,10 @@
       <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/avoid-using-cat-into-grep/</guid>
-      <description>Let me open by saying that I am guilty of doing this myself.
+      <description>I have been guilty of doing this myself.
 Instead of doing cat file1 file2 | grep -i searchTerm, it is better to use grep directly. The result is not only more efficient, but it&amp;rsquo;s more informative aswell.
 Here is why I came across a video by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of cat , and what it&amp;rsquo;s really meant for, which is concatenate and write files.</description>
-      <content:encoded><![CDATA[<p>Let me open by saying that I am guilty of doing this myself.</p>
+      <content:encoded><![CDATA[<p>I have been guilty of doing this myself.</p>
 <p>Instead of doing <code>cat file1 file2 | grep -i searchTerm</code>, it is better to use <a
 
 	
@@ -459,17 +459,17 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 .</p>
 <h2 id="installing-grub-efi-in-arch-linux">Installing GRUB EFI in Arch Linux</h2>
 <p>First off, we install some packages:</p>
-<pre tabindex="0"><code>sudo pacman -S vim networkmanager grub efibootmgr dosfstools os-prober mtools
-</code></pre><p>(Networkmanager is optional, but highly recommended)</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sudo pacman -S vim networkmanager grub efibootmgr dosfstools os-prober mtools
+</span></span></code></pre></div><p>(Networkmanager is optional, but highly recommended)</p>
 <h2 id="enablenetworkmanager">EnableNetworkManager</h2>
-<pre tabindex="0"><code>systemctl enable NetworkManager
-</code></pre><h2 id="mount-efi-partition">Mount EFI-partition</h2>
-<pre tabindex="0"><code>mount --mkdir /dev/drive /boot/EFI
-</code></pre><h2 id="install-grub">Install GRUB</h2>
-<pre tabindex="0"><code>grub-install --target=x86_64-efi --bootloader-id=grub_uefi --efi-directory=/boot/EFI --no-nvram --removable --recheck
-</code></pre><h2 id="make-grub-config-file">Make grub config file</h2>
-<pre tabindex="0"><code>grub-mkconfig -o /boot/grub/grub.cfg
-</code></pre><h2 id="reboot">Reboot</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">systemctl <span class="nb">enable</span> NetworkManager
+</span></span></code></pre></div><h2 id="mount-efi-partition">Mount EFI-partition</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">mount --mkdir /dev/drive /boot/EFI
+</span></span></code></pre></div><h2 id="install-grub">Install GRUB</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-install --target<span class="o">=</span>x86_64-efi --bootloader-id<span class="o">=</span>grub_uefi --efi-directory<span class="o">=</span>/boot/EFI --no-nvram --removable --recheck
+</span></span></code></pre></div><h2 id="make-grub-config-file">Make grub config file</h2>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">grub-mkconfig -o /boot/grub/grub.cfg
+</span></span></code></pre></div><h2 id="reboot">Reboot</h2>
 <ul>
 <li>Exit the chroot environment by typing <code>exit</code> or pressing <code>Ctrl+d</code>.</li>
 <li>Optionally manually unmount all the partitions with <code>umount -R /mnt</code>: this allows noticing any &ldquo;busy&rdquo; partitions, and finding the cause</li>
@@ -532,7 +532,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
       <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
-      <description>These modern Linux tools might enhance your workflow &amp;lt;code&amp;gt;fd&amp;lt;/code&amp;gt; is a simple and fast file search tool, enhancing the Unix find command. &amp;lt;code&amp;gt;exa&amp;lt;/code&amp;gt; is a modern replacement for ls, enhancing file listing with better defaults. &amp;lt;code&amp;gt;dog&amp;lt;/code&amp;gt; is a modern, feature-rich DNS client for the command-line. &amp;lt;code&amp;gt;ncdu&amp;lt;/code&amp;gt; is a console disk usage analyzer for quick space management. &amp;lt;code&amp;gt;bat&amp;lt;/code&amp;gt; is a cat clone with syntax highlighting and Git integration for the command-line. &amp;lt;code&amp;gt;sd&amp;lt;/code&amp;gt; is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
+      <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
       <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
 <ul>
 <li><a
@@ -553,7 +553,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;fd&lt;/code&gt;
+		fd
 	</span>
 
 </a>
@@ -576,7 +576,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;exa&lt;/code&gt;
+		exa
 	</span>
 
 </a>
@@ -599,7 +599,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;dog&lt;/code&gt;
+		dog
 	</span>
 
 </a>
@@ -622,7 +622,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;ncdu&lt;/code&gt;
+		ncdu
 	</span>
 
 </a>
@@ -645,7 +645,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;bat&lt;/code&gt;
+		bat
 	</span>
 
 </a>
@@ -668,7 +668,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;sd&lt;/code&gt;
+		sd
 	</span>
 
 </a>
@@ -691,7 +691,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;dust&lt;/code&gt;
+		dust
 	</span>
 
 </a>
@@ -714,7 +714,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;xh&lt;/code&gt;
+		xh
 	</span>
 
 </a>
@@ -737,7 +737,7 @@ Here is why I came across a video by [[Luke Smith]], where he explains why you s
 		>
 	
 	<span>
-		&lt;code&gt;duf&lt;/code&gt;
+		duf
 	</span>
 
 </a>

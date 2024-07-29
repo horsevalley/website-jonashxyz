@@ -13,10 +13,10 @@
       <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/avoid-using-cat-into-grep/</guid>
-      <description>Let me open by saying that I am guilty of doing this myself.
+      <description>I have been guilty of doing this myself.
 Instead of doing cat file1 file2 | grep -i searchTerm, it is better to use grep directly. The result is not only more efficient, but it&amp;rsquo;s more informative aswell.
 Here is why I came across a video by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of cat , and what it&amp;rsquo;s really meant for, which is concatenate and write files.</description>
-      <content:encoded><![CDATA[<p>Let me open by saying that I am guilty of doing this myself.</p>
+      <content:encoded><![CDATA[<p>I have been guilty of doing this myself.</p>
 <p>Instead of doing <code>cat file1 file2 | grep -i searchTerm</code>, it is better to use <a
 
 	

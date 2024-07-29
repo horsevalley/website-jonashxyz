@@ -13,10 +13,10 @@
       <pubDate>Wed, 10 Jul 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/avoid-using-cat-into-grep/</guid>
-      <description>Let me open by saying that I am guilty of doing this myself.
+      <description>I have been guilty of doing this myself.
 Instead of doing cat file1 file2 | grep -i searchTerm, it is better to use grep directly. The result is not only more efficient, but it&amp;rsquo;s more informative aswell.
 Here is why I came across a video by [[Luke Smith]], where he explains why you should avoid using cat into grep. This video made me reflect on my own usage of cat , and what it&amp;rsquo;s really meant for, which is concatenate and write files.</description>
-      <content:encoded><![CDATA[<p>Let me open by saying that I am guilty of doing this myself.</p>
+      <content:encoded><![CDATA[<p>I have been guilty of doing this myself.</p>
 <p>Instead of doing <code>cat file1 file2 | grep -i searchTerm</code>, it is better to use <a
 
 	
@@ -418,7 +418,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
       <pubDate>Sat, 09 Mar 2024 14:03:56 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/modern-linux-tools/</guid>
-      <description>These modern Linux tools might enhance your workflow &amp;lt;code&amp;gt;fd&amp;lt;/code&amp;gt; is a simple and fast file search tool, enhancing the Unix find command. &amp;lt;code&amp;gt;exa&amp;lt;/code&amp;gt; is a modern replacement for ls, enhancing file listing with better defaults. &amp;lt;code&amp;gt;dog&amp;lt;/code&amp;gt; is a modern, feature-rich DNS client for the command-line. &amp;lt;code&amp;gt;ncdu&amp;lt;/code&amp;gt; is a console disk usage analyzer for quick space management. &amp;lt;code&amp;gt;bat&amp;lt;/code&amp;gt; is a cat clone with syntax highlighting and Git integration for the command-line. &amp;lt;code&amp;gt;sd&amp;lt;/code&amp;gt; is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
+      <description>These modern Linux tools might enhance your workflow fd is a simple and fast file search tool, enhancing the Unix find command. exa is a modern replacement for ls, enhancing file listing with better defaults. dog is a modern, feature-rich DNS client for the command-line. ncdu is a console disk usage analyzer for quick space management. bat is a cat clone with syntax highlighting and Git integration for the command-line. sd is a simple and intuitive find-and-replace CLI tool, aiming to improve upon sed.</description>
       <content:encoded><![CDATA[<h2 id="these-modern-linux-tools-might-enhance-your-workflow">These modern Linux tools might enhance your workflow</h2>
 <ul>
 <li><a
@@ -439,7 +439,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;fd&lt;/code&gt;
+		fd
 	</span>
 
 </a>
@@ -462,7 +462,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;exa&lt;/code&gt;
+		exa
 	</span>
 
 </a>
@@ -485,7 +485,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;dog&lt;/code&gt;
+		dog
 	</span>
 
 </a>
@@ -508,7 +508,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;ncdu&lt;/code&gt;
+		ncdu
 	</span>
 
 </a>
@@ -531,7 +531,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;bat&lt;/code&gt;
+		bat
 	</span>
 
 </a>
@@ -554,7 +554,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;sd&lt;/code&gt;
+		sd
 	</span>
 
 </a>
@@ -577,7 +577,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;dust&lt;/code&gt;
+		dust
 	</span>
 
 </a>
@@ -600,7 +600,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;xh&lt;/code&gt;
+		xh
 	</span>
 
 </a>
@@ -623,7 +623,7 @@ inkscape input.svg --export-filename=output.pdf Replace input.svg with the name 
 		>
 	
 	<span>
-		&lt;code&gt;duf&lt;/code&gt;
+		duf
 	</span>
 
 </a>

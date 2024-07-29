@@ -13,12 +13,10 @@
       <pubDate>Thu, 16 May 2024 00:00:00 +0000</pubDate>
       
       <guid>https://jonash.xyz/posts/helm---the-package-manager-for-kubernetes/</guid>
-      <description>#Kubernetes #Helm #DevOps
-Helm Helm is the best way to find, share, and use software built for Kubernetes . It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
+      <description>Helm Helm is the best way to find, share, and use software built for Kubernetes . It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
 Helm is a graduated project in the CNCF and is maintained by the Helm community .
 What is a helm chart? a Helm chart is a powerful tool that simplifies the deployment, management, and sharing of applications on Kubernetes by packaging all necessary resources and configurations into a single, reusable unit.</description>
-      <content:encoded><![CDATA[<p>#Kubernetes #Helm #DevOps</p>
-<h2 id="helm">Helm</h2>
+      <content:encoded><![CDATA[<h2 id="helm">Helm</h2>
 <p>Helm is the best way to find, share, and use software built for <a
 
 	

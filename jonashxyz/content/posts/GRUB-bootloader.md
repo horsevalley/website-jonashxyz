@@ -25,26 +25,26 @@ The reason I made this simple guide is to help myself remember how to set up gru
 
 ## Installing GRUB EFI in Arch Linux
 First off, we install some packages:
-```
+```bash
 sudo pacman -S vim networkmanager grub efibootmgr dosfstools os-prober mtools
 ```
 
 (Networkmanager is optional, but highly recommended)
 
 ## EnableNetworkManager
-```
+```bash
 systemctl enable NetworkManager
 ```
 ## Mount EFI-partition
-```
+```bash
 mount --mkdir /dev/drive /boot/EFI
 ```
 ## Install GRUB
-```
+```bash
 grub-install --target=x86_64-efi --bootloader-id=grub_uefi --efi-directory=/boot/EFI --no-nvram --removable --recheck
 ```
 ## Make grub config file
-```
+```bash
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 ## Reboot

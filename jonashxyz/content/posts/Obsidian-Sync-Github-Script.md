@@ -14,7 +14,7 @@ tags:
 ---
 # obsidian-sync-github
 ## Why write this script?
-I'm using Arch Linux and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.
+I'm using Arch Linux (btw) and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.
 ## How the script works
 - Auto-pushes Obsidian notes to GitHub via a cronjob every 30 minutes
 	- crontab -e -> `*/30 * * * * /home/jonash/.local/bin/obsidian-sync-github`

@@ -9,7 +9,6 @@ tags:
 draft: false
 ---
 
-#Kubernetes #Helm #DevOps 
 ## Helm
 Helm is the best way to find, share, and use software built for [Kubernetes](https://kubernetes.io). It helps you manage Kubernetes applications and helps you define, install, and upgrade even the most complex Kubernetes application.
 

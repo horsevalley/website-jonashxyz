@@ -12,7 +12,7 @@ draft: false
 title: Avoid using cat into grep
 ---
 
-Let me open by saying that I am guilty of doing this myself.
+I have been guilty of doing this myself.
 
 Instead of doing `cat file1 file2 | grep -i searchTerm`, it is better to use [grep](https://www.gnu.org/software/grep/) directly. The result is not only more efficient, but it's more informative aswell.
 

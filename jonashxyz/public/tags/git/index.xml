@@ -13,11 +13,11 @@
       <pubDate>Wed, 20 Mar 2024 17:55:52 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/obsidian-sync-github-script/</guid>
-      <description>obsidian-sync-github Why write this script? I&amp;rsquo;m using Arch Linux and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.
+      <description>obsidian-sync-github Why write this script? I&amp;rsquo;m using Arch Linux (btw) and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.
 How the script works Auto-pushes Obsidian notes to GitHub via a cronjob every 30 minutes crontab -e -&amp;gt; */30 * * * * /home/jonash/.local/bin/obsidian-sync-github Sends a notification via dunstify and your e-mail address of choice #!</description>
       <content:encoded><![CDATA[<h1 id="obsidian-sync-github">obsidian-sync-github</h1>
 <h2 id="why-write-this-script">Why write this script?</h2>
-<p>I&rsquo;m using Arch Linux and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.</p>
+<p>I&rsquo;m using Arch Linux (btw) and the Obsidian electron AppImage from AUR. It works great, but for some reason the obsidian git community plugin makes the app super sluggish. I removed the plugin and wrote my own bash script instead.</p>
 <h2 id="how-the-script-works">How the script works</h2>
 <ul>
 <li>Auto-pushes Obsidian notes to GitHub via a cronjob every 30 minutes
