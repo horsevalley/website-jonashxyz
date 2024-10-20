@@ -38,7 +38,9 @@ Do you notice the difference?
 
 Not only do we save memory by eliminating the use of another program (cat), but we also get information about which files the search string appears in.
 
-Changing a bad habit that is engrained in your mind can be a real struggle, but I will do my best to adopt this new way of searching.
+It's a good practice to always be thinking about how you can strip down redundant programs and lines of code, so that you are left with only the bare minimum.
+
+Changing a bad habit that is engrained in your mind can be tough, but mindful reflection will help you to adopt new ways of thinking.
 
 ## Links :
 
