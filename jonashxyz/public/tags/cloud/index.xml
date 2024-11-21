@@ -13,8 +13,19 @@
       <pubDate>Sat, 09 Mar 2024 13:09:52 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/what-is-devops/</guid>
-      <description>DevOps, a compound of development (Dev) and operations (Ops), is a software development and delivery approach that emphasizes communication, collaboration, integration, and automation among software developers and IT operations teams. The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</description>
-      <content:encoded><![CDATA[<p>DevOps, a compound of development (Dev) and operations (Ops), is a software development and delivery approach that emphasizes communication, collaboration, integration, and automation among software developers and IT operations teams. The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</p>
+      <description>Development (Dev) and Operations (Ops), is a software development and delivery approach.
+It emphasizes:
+communication collaboration integration automation The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.
+Key Principles of DevOps Continuous Integration (CI): Developers merge their changes back to the main branch as often as possible.</description>
+      <content:encoded><![CDATA[<p>Development (Dev) and Operations (Ops), is a software development and delivery approach.</p>
+<p>It emphasizes:</p>
+<ul>
+<li>communication</li>
+<li>collaboration</li>
+<li>integration</li>
+<li>automation</li>
+</ul>
+<p>The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</p>
 <h2 id="key-principles-of-devops">Key Principles of DevOps</h2>
 <ul>
 <li>
@@ -54,7 +65,7 @@
 <p><strong>Higher Customer Satisfaction:</strong> Rapid deliveries of updates and new features lead to higher customer satisfaction.</p>
 </li>
 </ul>
-<p>DevOps is not just a set of practices but a culture that needs to be adopted for its full potential to be realized. By embracing DevOps, organizations can enhance their ability to deliver applications and services at high velocity, thereby outpacing their competitors in today&rsquo;s fast-paced digital world.</p>
+<p>DevOps is not just a set of practices, but a culture that needs to be adopted for its full potential to be realized. By embracing DevOps, organizations can enhance their ability to deliver applications and services at high velocity, thereby outpacing their competitors in today&rsquo;s fast-paced digital world.</p>
 ]]></content:encoded>
     </item>
     
