@@ -1880,17 +1880,15 @@ is a modern disk usage utility for the command-line with an intuitive interface.
       <pubDate>Sat, 09 Mar 2024 13:09:52 +0100</pubDate>
       
       <guid>https://jonash.xyz/posts/what-is-devops/</guid>
-      <description>Development (Dev) and Operations (Ops), is a software development and delivery approach.
-It emphasizes:
-communication collaboration integration automation The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.
+      <description>Development (Dev) and Operations (Ops), is a culture and mindset. It is also a software development and delivery approach, which emphasizes:
+Communication Collaboration Integration Automation The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.
 Key Principles of DevOps Continuous Integration (CI): Developers merge their changes back to the main branch as often as possible.</description>
-      <content:encoded><![CDATA[<p>Development (Dev) and Operations (Ops), is a software development and delivery approach.</p>
-<p>It emphasizes:</p>
+      <content:encoded><![CDATA[<p>Development (Dev) and Operations (Ops), is a culture and mindset. It is also a software development and delivery approach, which emphasizes:</p>
 <ul>
-<li>communication</li>
-<li>collaboration</li>
-<li>integration</li>
-<li>automation</li>
+<li>Communication</li>
+<li>Collaboration</li>
+<li>Integration</li>
+<li>Automation</li>
 </ul>
 <p>The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.</p>
 <h2 id="key-principles-of-devops">Key Principles of DevOps</h2>

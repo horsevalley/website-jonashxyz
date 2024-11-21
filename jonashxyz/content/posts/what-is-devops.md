@@ -10,14 +10,12 @@ draft : false
 ---
 
 
-Development (Dev) and Operations (Ops), is a software development and delivery approach. 
+Development (Dev) and Operations (Ops), is a culture and mindset. It is also a software development and delivery approach, which emphasizes:
 
-It emphasizes:
-
-- communication 
-- collaboration 
-- integration 
-- automation 
+- Communication 
+- Collaboration 
+- Integration 
+- Automation 
 
 The goal of DevOps is to improve and speed up the delivery of software applications and services. By fostering a culture where building, testing, and releasing software can happen rapidly, frequently, and more reliably, DevOps has become a key practice in the software industry.
 
